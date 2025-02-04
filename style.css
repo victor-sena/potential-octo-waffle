@@ -694,7 +694,7 @@ body {
 .site-head .logo {
   fill: var(--clr-light);
 } 
-.site-head:is(.bg-green-50, .bg-green-100, .bg-yellow, .bg-pink) .logo {
+.site-head:is(.bg-green-50, .bg-yellow, .bg-pink) .logo {
   fill: var(--clr-blue-100);
 }
 .site-head::after {

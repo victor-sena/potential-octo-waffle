@@ -34,13 +34,15 @@
                         </ul>
                     </nav>
                     <img src="assets/img/sticker-make-waves.webp" alt="Make Waves" class="sticker-make-waves pos-absolute" >
-                </div>    
-                <div class="select pos-relative">
-                    <select name="language" class="lang ff-october"> 
-                        <option value="PT">PT</option>
-                        <option value="EN">EN</option>
-                        <option value="TET">TET</option>
-                    </select>
+                </div>
+                <div class="header-lang pos-absolute">    
+                    <div class="select pos-relative">
+                        <select name="language" class="lang ff-october"> 
+                            <option value="PT">PT</option>
+                            <option value="EN">EN</option>
+                            <option value="TET">TET</option>
+                        </select>
+                    </div>
                 </div>
             </div>            
         </div>  
@@ -49,6 +51,44 @@
         <section class="poster">
             <div class="wrapper">
                 <img src="assets/img/tasi-festival-cartaz.webp" alt="">
+            </div>
+        </section>
+        <section class="bg-off-white pb-3xl">
+            <div class="wrapper">
+                <div class="tabs-container stack stack:l">
+                    <div class="center">
+                        <ul class="flex tabs-header gap:2xl text-uppercase ff-october" aria-labelledby="tabs-title" role="list">
+                            <li>
+                                <a id="tab-1" class="flex gap:2xs justify-content:center align-items:center text-step-2" href="#kinta">
+                                    <span class="tab-title-day flex">5</span>
+                                    <span class="tab-title-text">Kinta</span>    
+                                </a>
+                            </li>
+                            <li>
+                                <a id="tab-2" class="flex gap:2xs justify-content:center align-items:center text-step-2" href="#sexta">
+                                    <span class="tab-title-day flex">6</span>
+                                    <span class="tab-title-text">Sexta</span></a>
+                            </li>
+                            <li>
+                                <a id="tab-3" class="flex gap:2xs justify-content:center align-items:center text-step-2" href="#sabadu">
+                                    <span class="tab-title-day flex">7</span>
+                                    <span class="tab-title-text">Sábadu</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tabs-panel">
+                        <div id="kinta" class="flex flex:wrap gap:m tab-panel" aria-labelledby="tab-1">
+                            <div>
+                                
+                            </div>
+                        </div>
+                        <div id="sexta" class="flex flex:wrap gap:m tab-panel" aria-labelledby="tab-2">
+                        </div>
+                        <div id="sabadu" class="flex flex:wrap gap:m tab-panel" aria-labelledby="tab-3">
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
@@ -104,6 +144,6 @@
             </div>
         </div>
     </footer>
-    <script src="assets/js/coutdown.js"></script>
+    <script src="assets/js/tabs.js"></script>
 </body>
 </html>

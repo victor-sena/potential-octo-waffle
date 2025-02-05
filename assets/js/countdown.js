@@ -27,6 +27,4 @@ const countdown = () => {
 window.addEventListener('load', () => {
     countdown();
     setInterval(countdown, 1000);
-})
-
-
+});

@@ -266,6 +266,8 @@ main {
 }
 .ff-salomfu {
   font-family: var(--font-salomfu);
+  font-weight: 100;
+  letter-spacing: 1px;
 }
 .ff-hipnouma {
   font-family: var(--font-hipnouma);
@@ -305,28 +307,44 @@ main {
 .pos-absolute {
   position: absolute;
 }
-.bg-blue-50 {
+.bg-blue-50,
+.title-wave-blue-50::before,
+.title-wave-blue-50::after {
   background-color: var(--clr-blue-50);
 }
-.bg-blue-100 {
+.bg-blue-100,
+.title-wave-blue-100::before,
+.title-wave-blue-100::after {
   background-color: var(--clr-blue-100);
 }
-.bg-orange-50 {
+.bg-orange-50,
+.title-wave-orange-50::before,
+.title-wave-orange-50::after {
   background-color: var(--clr-orange-50);
 }
-.bg-orange-100 {
+.bg-orange-100,
+.title-wave-orange-100::before,
+.title-wave-orange-100::after {
   background-color: var(--clr-orange-50);
 }
-.bg-yellow {
+.bg-yellow,
+.title-wave-yellow::before,
+.title-wave-yellow::after {
   background-color: var(--clr-yellow);
 }
-.bg-green-50 {
+.bg-green-50,
+.title-wave-green-50::before,
+.title-wave-green-50::after {
   background-color: var(--clr-green-50);
 }
-.bg-green-100 {
+.bg-green-100,
+.title-wave-green-100::before,
+.title-wave-green-100::after {
   background-color: var(--clr-green-100);
 }
-.bg-pink {
+.bg-pink,
+.title-wave-pink::before,
+.title-wave-pink::after {
   background-color: var(--clr-pink);
 }
 .bg-light {
@@ -375,18 +393,60 @@ main {
   border-top-left-radius: .5rem;
   border-top-right-radius: .5rem;
 }
+.img-border {
+  border-radius: 4px;
+}
+.img-border\:blue-50 {
+  border:8px solid var(--clr-blue-50);  
+}
+.img-border\:pink {
+  border:8px solid var(--clr-pink);
+}
 .btn {
   display: inline-flex;
   border-radius: 4px;
-  font-family: var(--font-salomfu);
-  font-size: var(--step-1);
   text-transform: uppercase;
   text-decoration: none;
+}
+.btn\:primary {
+  font-family: var(--font-salomfu);
+  font-size: var(--step-1);
   letter-spacing: 1px;
+}
+.btn\:secondary {
+  font-family: var(--font-manrope-bold);
+  font-size: var(--step-0);
+}
+.btn\:medium {
+  padding-inline: var(--space-s);
+  padding-block: var(--space-2xs);
 }
 .btn\:large {
   padding-inline: var(--space-m);
   padding-block: var(--space-xs);
+}
+.title-wave {
+  font-family: var(--font-salomfu);
+  font-size: var(--step-7);
+  font-weight: var(--font-regular);
+  justify-content: center;
+  align-items: center;
+  gap:var(--space-m);
+  text-transform: uppercase;
+}
+.title-wave::before,
+.title-wave::after {
+  content: "";
+  display: inline-block;
+  width: 127px;
+  height: 18px;
+  mask-image: url(assets/img/bg-title-wave.svg);
+}
+.overflow\:hidden {
+  overflow: hidden;
+}
+.overflow\:visible {
+  overflow: visible;
 }
 /* Flexbox */
 .flex {
@@ -434,6 +494,11 @@ main {
 .cluster\:center {
   justify-content: center;
   align-items: center;
+}
+/* Sidebar */
+.with-sidebar {
+  display: flex;
+  flex-wrap: wrap;
 }
 /* Spacing */
 .mb-start-3xs {
@@ -705,6 +770,11 @@ main {
 }
 .stack\:3xl > * + * {
   margin-block-start: var(--space-3xl);
+}
+/* Swiper */
+.swiper {
+  width: 100%;
+  height: 100%;
 }
 /* Header */
 .site-head {
@@ -1072,11 +1142,148 @@ footer .lang {
 #tab-3[aria-selected="true"] .tab-title-text {
   color: var(--clr-blue-50);
 }
-.tab-panel-grid > div {
-  flex:0;
-  flex-basis: 296px;
-  height: 296px; 
+.tab-grid {
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }
-.panel:hover {
-  flex-basis: 100%;
+.tab-card {
+  padding-block:var(--space-s);
+  padding-inline: var(--space-s);
+  display: flex;
+  flex: 0 0 300px;
+  width: 300px;
+  gap: var(--space-m);
+}
+.tab-card h2 {
+  font-family: var(--font-salomfu);
+}
+.tab-cover {
+  flex-basis: 380px;
+  flex-grow: 1;
+}
+.tab-content {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+  visibility: hidden;
+  display: none;
+}
+.tab-card.active {
+  flex-basis: 90%;
+  width: 90%;
+}
+.tab-card.active .tab-content {
+  visibility: visible;
+  display: block;
+}
+/* Alem da Musica Page */
+.bg-cartaz-1 {
+  background: url(assets/img/bg-cartaz-1.png) center center no-repeat;
+  background-size: cover;
+}
+.bg-cartaz-2 {
+  background: url(assets/img/bg-cartaz-2.png) center center no-repeat;
+  background-size: cover;
+  border-top:2px solid #EAE8DC;
+}
+.workshop {
+  padding-block-start: 4.5rem;
+  padding-block-end: 8.5rem;
+}
+.workshop-sidebar > :first-child {
+  flex-basis: 448px;
+  flex-grow: 1;
+}
+.workshop-sidebar > :last-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+.workshop-image img {
+  z-index: 2;
+}
+.workshop-image:before {
+  content: url(assets/icon/workshop-image-1.svg);
+  position: absolute;
+  top: -95px;
+  left: -135px;
+  width: 234px;
+  height: 240px;
+  z-index: 1;
+}
+.workshop-image:after {
+  content: url(assets/icon/workshop-image-2.svg);
+  position: absolute;
+  bottom: -172px;
+  right: -59px;
+  width: 234px;
+  height: 240px;
+  z-index: 1;
+}
+/* O Festival */
+.festival-banner {
+  background-image: url(assets/img/bg-cartaz-o-festival.webp);
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+.festival-content {
+  height: 576px;
+}
+.festival-content .stack {
+  width: 51ch;
+  padding-block-start: var(--space-xl);
+}
+.bg-turtle {
+  background: url(assets/img/bg-turtle.jpg) center center no-repeat;
+  background-size: cover;
+}
+.turtle-content {
+  height: 516px;
+}
+.turtle-content .stack {
+  width: 44ch;
+  margin-inline-start: 10rem;
+}
+.inclusion-sidebar > :last-child {
+  flex-basis: 464px;
+  flex-grow: 1;
+}
+.inclusion-sidebar > :first-child {
+  flex-basis: 0;
+  flex-grow: 999;
+  min-inline-size: 50%;
+}
+.inclusion-image img {
+  z-index: 2;
+}
+.inclusion {
+  padding-block-start: 8.75rem;
+  padding-block-end: 5rem;
+}
+.bg-wave-yellow {
+  background-color: var(--clr-off-white);
+  background-image: url(assets/img/bg-wave-yellow.svg);
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+}
+.inclusion-image:before {
+  content: url(assets/icon/inclusion-image-1.svg);
+  position: absolute;
+  top: -68px;
+  left: -28px;
+  width: 86px;
+  height: 108px;
+  z-index: 1;
+}
+.inclusion-image:after {
+  content: url(assets/icon/inclusion-image-2.svg);
+  position: absolute;
+  bottom: -29px;
+  right: -24px;
+  width: 82px;
+  height: 71px;
+  z-index: 3;
 }

@@ -78,10 +78,63 @@
                         </ul>
                     </div>
                     <div class="tabs-panel">
-                        <div id="kinta" class="flex flex:wrap gap:m tab-panel" aria-labelledby="tab-1">
-                            <div>
-                                
-                            </div>
+                        <div id="kinta" class="stack stack:s tab-panel" aria-labelledby="tab-1">
+                            <div class="flex tab-grid tab-grid-1-1 gap:s">
+                                <div class="tab-card tab-card-left bg-green-50">
+                                    <div class="tab-cover stack stack:s">
+                                        <img src="assets/img/card-img-1.png" alt="">
+                                        <h2>Lorem Ipsum</h2>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="stack stack:m">
+                                            <div>Data</div>
+                                            <h2>Lorem Ipsum</h2>
+                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est.</p>
+                                            <div class="flex justify-content:space-between">
+                                                <div>Ouvir no Youtube</div>
+                                                <a class="btn" href="#">Comprar bilhete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-card tab-card-center bg-pink">
+                                    <div class="tab-cover stack stack:s">
+                                        <img src="assets/img/card-img-2.png" alt="">
+                                        <h2>Lorem Ipsum</h2>
+                                    </div>
+                                    <div class="tab-content">
+                                        <div class="stack stack:m">
+                                            <div>Data</div>
+                                            <h2>Lorem Ipsum</h2>
+                                            <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est.</p>
+                                            <div class="flex justify-content:space-between">
+                                                <div>Ouvir no Youtube</div>
+                                                <a class="btn" href="#">Comprar bilhete</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-card tab-card-right bg-orange-50">
+                                    <div class="tab-cover stack stack:s">
+                                        <img src="assets/img/card-img-1.png" alt="">
+                                        <h2>Lorem Ipsum</h2>
+                                    </div>
+                                        <div class="tab-content">
+                                            <div class="stack stack:m">
+                                                <div>Data</div>
+                                                <h2>Lorem Ipsum</h2>
+                                                <p>"At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.
+                                                    Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est.</p>
+                                                <div class="flex justify-content:space-between">
+                                                    <div>Ouvir no Youtube</div>
+                                                    <a class="btn" href="#">Comprar bilhete</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>                                
+                            </div>                          
                         </div>
                         <div id="sexta" class="flex flex:wrap gap:m tab-panel" aria-labelledby="tab-2">
                         </div>
@@ -145,5 +198,19 @@
         </div>
     </footer>
     <script src="assets/js/tabs.js"></script>
+    <script>
+        const CARDS = document.querySelectorAll('.tab-card'); 
+        
+        CARDS.forEach(card => {
+            card.addEventListener('click', function(event) {
+                CARDS.forEach(otherCard => {
+                    if (otherCard !== this) {
+                        otherCard.classList.remove('active');
+                    }
+                });
+            this.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

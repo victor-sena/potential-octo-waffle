@@ -1264,14 +1264,16 @@ footer .lang {
   margin-block-start: -.3rem;
 }
 /* Cartaz Page */
-.poster {
-  background-image: linear-gradient(var(--clr-yellow), var(--clr-yellow)), linear-gradient(var(--clr-blue-50), var(--clr-blue-50));
-  background-repeat: no-repeat;
-  background-size: 50%, 50%;
-  background-position: left, right;
+.poster .wrapper {
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 .poster img {
   width: 100%;
+}
+.poster img:not([class]) {
+  display: none;
 }
 [role="tablist"] {
   list-style: none;
@@ -1281,16 +1283,20 @@ footer .lang {
 [hidden] {
   display: none;
 }
+.tabs-header {
+  gap:var(--space-s);
+}
 .tabs-header a {
   text-decoration: none;
-  font-size: var(--step-2);
+  font-size: var(--step--0);
   color: var(--clr-mid-grey-100);
 }
 .tab-title-day {
-  width: 61px;
-  height: 64px;
+  width: 41px;
+  height: 44px;
   -webkit-mask-image: url(assets/icon/tab-title-icon-disabled.svg);
   mask-image: url(assets/icon/tab-title-icon-disabled.svg);
+  mask-size:cover;
   background-color: var(--clr-mid-grey-100);
   color: var(--clr-mid-grey-50);
   justify-content: center;
@@ -1355,7 +1361,42 @@ footer .lang {
   visibility: visible;
   display: block;
 }
+@media (min-width: 460px) {
+  .tabs-header a {
+    font-size: var(--step-2);
+  }
+  .tab-title-day {
+    width: 61px;
+    height: 64px;
+  }
+}
+@media (min-width: 1193px) {
+  .poster {
+    background-image: linear-gradient(var(--clr-yellow), var(--clr-yellow)), linear-gradient(var(--clr-blue-50), var(--clr-blue-50));
+    background-repeat: no-repeat;
+    background-size: 50%, 50%;
+    background-position: left, right;
+  }
+  .poster .mobile-cartaz {
+    display: none;
+  }
+  .poster img:not([class]) {
+    display: block;
+    margin: 0 auto;
+  }
+  .poster .wrapper {
+    width: clamp(16rem,93vw,70rem);
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: .3125rem;
+    padding-right: .3125rem;
+  }  
+}
 /* Alem da Musica Page */
+.bg-cartaz-1,
+.bg-cartaz-2 {
+   padding-block: var(--space-3xl);
+}
 .bg-cartaz-1 {
   background: url(assets/img/bg-cartaz-1.png) center center no-repeat;
   background-size: cover;
@@ -1386,6 +1427,13 @@ footer .lang {
   width: 234px;
   height: 240px;
   z-index: 1;
+}
+@media (min-width:1193px) {
+  .bg-cartaz-1,
+  .bg-cartaz-2 {
+    padding-block: 10rem;
+  }  
+
 }
 /* O Festival */
 .festival-banner {

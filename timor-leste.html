@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="site-head pos-relative bg-yellow" role="banner">
-        <div class="wrapper pb-xs pos-relative">
+        <div id="menu" class="wrapper pb-xs pos-relative">
             <div class="flex justify-content:space-between align-items:center">
                 <div class="flex align-items:center pos-relative">
                     <a href="index.html">
@@ -33,8 +33,8 @@
                             <li class="icon icon-musical-note-2"><a href="bilheteria.html">Bilhereria</a></li>
                         </ul>
                     </nav>
-                    <img src="assets/img/sticker-make-waves.webp" alt="Make Waves" class="sticker-make-waves pos-absolute" >
-                </div>    
+                    <img src="assets/img/sticker-make-waves.webp" alt="Make Waves" class="sticker-make-waves pos-absolute" >   
+                </div>   
                 <div class="header-lang pos-absolute">    
                     <div class="select pos-relative">
                         <select name="language" class="lang ff-october"> 
@@ -44,11 +44,131 @@
                         </select>
                     </div>
                 </div>
-            </div>            
+                <h1 class="title-mobile flex flex:column align-items:center pos-relative ff-october text-uppercase text-step-2">Timor Leste</h1>
+                <button id="btn-mobile" class="bar stack justify-content:center pos-relative">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>  
+            </div>
+            <nav id="mobile-nav">
+                <div class="mobile-lang flex justify-content:flex-end gap:3xs text-uppercase">
+                    <a href="#">PT</a>
+                    <a href="#">EN</a>
+                    <a href="#">TET</a>
+                </div>
+                <ul class="flex flex:column gap:l nav-list ff-october color-light text-uppercase" role="list">
+                    <li class="current_page_item"><a href="index.html">Home</a></li>
+                    <li><a href="cartaz.html">Cartaz</a></li>
+                    <li><a href="alem-da-musica.html">Além da Música</a></li>
+                    <li><a href="o-festival.html">O Festival</a></li>
+                    <li><a href="edicoes-anteriores.html">Edições Anteriores</a></li>
+                    <li><a href="informacoes-uteis.html">Informações úteis</a></li>
+                    <li><a href="timor-leste.html">Timor-Leste</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a href="bilheteria.html">Bilhereria</a></li>
+                </ul>
+            </nav>            
         </div>  
     </header>
     <main>
-        
+        <section class="bg-wave-green-50 pb-xl">
+            <div class="wrapper">
+                <h2 class="title-wave title-wave-yellow color-blue-50 flex">Bem vindo a Timor-Leste</h2>
+                <div class="timor-banner post-relative">
+                    <img class="img-border mb-start-l" src="assets/img/cristo-rei.jpg" alt="">
+                    <span class="sticker-turtle"></span>
+                </div>
+            </div>
+        </section>
+        <section class="bg-off-white pb-end-l">
+            <div class="wrapper">
+                <div class="stack stack:l">
+                    <h2 class="text-step-5 text-uppercase color-blue-100 ff-salomfu text-center">Timor-Leste: Um Destino Jovem e Inexplorado</h2>
+                    <div class="stack stack:xs text-step-1 center">
+                        <p>Situado no sudeste asiático, Timor-Leste é um país jovem, dinâmico e repleto de encantos. Este destino ainda pouco explorado combina natureza exuberante, cultura rica e experiências autênticas.</p>
+                        <p>Aqui, cada visitante tem a oportunidade de descobrir um território único, onde a hospitalidade do povo se une a paisagens de cortar a respiração</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="timor-leste-left bg-off-white pb-3xl">
+            <div class="wrapper">
+                <div class="with-sidebar left-sidebar timor-sidebar gap:l align-items:center">
+                    <div class="timor-img timor-img-1 pos-relative">
+                        <img class="img-border img-border:blue-50 z-index:2 pos-relative" src="assets/img/timor-img.webp" alt="">
+                    </div>
+                    <div>
+                        <div class="stack stack:m pos-relative z-index:3">
+                            <div class="stack stack:3xs text-uppercase ff-salomfu fw-regular">
+                                <h2 class="text-step-7 color-orange-100">Cultura Rica e Única</h2>
+                            </div>
+                            <div class="color-blue-100">
+                                <p>Timor-Leste é um verdadeiro mosaico cultural, onde tradições ancestrais se cruzam com influências modernas. Celebre a riqueza da música, dança e gastronomia timorenses e descubra o artesanato local nos mercados tradicionais. Uma imersão cultural que revela a alma vibrante deste povo acolhedor e resiliente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="timor-leste-right bg-off-white pb-3xl">
+            <div class="wrapper">
+                <div class="with-sidebar right-sidebar timor-sidebar gap:l align-items:center">
+                    <div>
+                        <div class="stack stack:m pos-relative z-index:3">
+                            <div class="stack stack:3xs text-uppercase ff-salomfu fw-regular">
+                                <h2 class="text-step-7 color-blue-50">Fundo do Mar: Biodiversidade Exuberante</h2>
+                            </div>
+                            <div class="color-blue-100">
+                                <p>As águas cristalinas de Timor-Leste estão entre as mais biodiversas do mundo. Os recifes de coral praticamente intocados são um paraíso para mergulhadores e amantes de snorkeling. Explore um universo subaquático vibrante, habitado por espécies marinhas únicas, e sinta a magia de um ecossistema ainda preservado.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timor-img timor-img-2 pos-relative">
+                        <img class="img-border img-border:blue-50 z-index:2 pos-relative" src="assets/img/timor-img.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="timor-leste-left bg-off-white pb-3xl">
+            <div class="wrapper">
+                <div class="with-sidebar left-sidebar timor-sidebar gap:l align-items:center">
+                    <div class="timor-img timor-img-1 pos-relative">
+                        <img class="img-border img-border:blue-50 z-index:2 pos-relative" src="assets/img/timor-img.webp" alt="">
+                    </div>
+                    <div>
+                        <div class="stack stack:m pos-relative z-index:3">
+                            <div class="stack stack:3xs text-uppercase ff-salomfu fw-regular">
+                                <h2 class="text-step-7 color-orange-100">Montanhas com Paisagens de Tirar o Folego</h2>
+                            </div>
+                            <div class="color-blue-100">
+                                <p>Para os mais aventureiros, Timor-Leste oferece montanhas fabulosas e trilhos desafiantes. As paisagens intocadas, que alternam entre vales profundos e cumes imponentes, prometem experiências únicas para caminhadas e exploração. Descubra o lado mais selvagem e autêntico deste destino de aventura.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="timor-leste-right bg-off-white pb-3xl">
+            <div class="wrapper">
+                <div class="with-sidebar right-sidebar timor-sidebar gap:l align-items:center">
+                    <div>
+                        <div class="stack stack:m pos-relative z-index:3">
+                            <div class="stack stack:3xs text-uppercase ff-salomfu fw-regular">
+                                <h2 class="text-step-7 color-blue-50">Praias de Areia Branca e Águas Quentes</h2>
+                            </div>
+                            <div class="color-blue-100">
+                                <p>Timor-Leste é um refúgio paradisíaco, com praias de areia branca e águas mornas e cristalinas. Perfeitas para relaxar ou explorar, estas praias oferecem o cenário ideal para momentos de tranquilidade e contemplação. Um convite para mergulhar na beleza intocada deste destino único.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timor-img timor-img-2 pos-relative">
+                        <img class="img-border img-border:blue-50 z-index:2 pos-relative" src="assets/img/timor-img.webp" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer class="site-footer pos-relative">
         <div class="wrapper pb-xl">
@@ -103,5 +223,13 @@
         </div>
     </footer>
     <script src="assets/js/coutdown.js"></script>
+    <script>
+        const btnMobile = document.getElementById("btn-mobile");
+        const menu = document.getElementById("menu");
+
+        btnMobile.addEventListener("click", function() {
+            menu.classList.toggle("active");
+        });
+   </script>
 </body>
 </html>

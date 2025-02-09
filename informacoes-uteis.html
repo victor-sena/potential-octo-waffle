@@ -9,7 +9,7 @@
 </head>
 <body>
     <header class="site-head pos-relative bg-yellow" role="banner">
-        <div class="wrapper pb-xs pos-relative">
+        <div id="menu" class="wrapper pb-xs pos-relative">
             <div class="flex justify-content:space-between align-items:center">
                 <div class="flex align-items:center pos-relative">
                     <a href="index.html">
@@ -27,15 +27,15 @@
                             <li class="icon icon-ocean-star"><a href="alem-da-musica.html">Além da Música</a></li>
                             <li class="icon icon-wave"><a href="o-festival.html">O Festival</a></li>
                             <li class="icon icon-heart"><a href="edicoes-anteriores.html">Edições Anteriores</a></li>
-                            <li class="current_page_item"><a href="informacoes-uteis.html">Informações úteis</a></li>
+                            <li><a href="informacoes-uteis.html">Informações úteis</a></li>
                             <li class="icon icon-splash"><a href="timor-leste.html">Timor-Leste</a></li>
                             <li class="icon icon-seaweed-2"><a href="parceiros.html">Parceiros</a></li>
                             <li class="icon icon-musical-note-1"><a href="quem-somos.html">Quem somos</a></li>
                             <li class="icon icon-musical-note-2"><a href="bilheteria.html">Bilhereria</a></li>
                         </ul>
                     </nav>
-                    <img src="assets/img/sticker-make-waves.webp" alt="Make Waves" class="sticker-make-waves pos-absolute" >
-                </div>    
+                    <img src="assets/img/sticker-make-waves.webp" alt="Make Waves" class="sticker-make-waves pos-absolute" >   
+                </div>   
                 <div class="header-lang pos-absolute">    
                     <div class="select pos-relative">
                         <select name="language" class="lang ff-october"> 
@@ -45,123 +45,319 @@
                         </select>
                     </div>
                 </div>
-            </div>            
-        </div>  
+                <h1 class="title-mobile flex flex:column align-items:center pos-relative ff-october text-uppercase text-step-2">Informações úteis</h1>
+                <button id="btn-mobile" class="bar stack justify-content:center pos-relative">
+                    <span class="top"></span>
+                    <span class="middle"></span>
+                    <span class="bottom"></span>
+                </button>  
+            </div>
+            <nav id="mobile-nav">
+                <div class="mobile-lang flex justify-content:flex-end gap:3xs text-uppercase">
+                    <a href="#">PT</a>
+                    <a href="#">EN</a>
+                    <a href="#">TET</a>
+                </div>
+                <ul class="flex flex:column gap:l nav-list ff-october color-light text-uppercase" role="list">
+                    <li class="current_page_item"><a href="index.html">Home</a></li>
+                    <li><a href="cartaz.html">Cartaz</a></li>
+                    <li><a href="alem-da-musica.html">Além da Música</a></li>
+                    <li><a href="o-festival.html">O Festival</a></li>
+                    <li><a href="edicoes-anteriores.html">Edições Anteriores</a></li>
+                    <li><a href="informacoes-uteis.html">Informações úteis</a></li>
+                    <li><a href="timor-leste.html">Timor-Leste</a></li>
+                    <li><a href="parceiros.html">Parceiros</a></li>
+                    <li><a href="quem-somos.html">Quem somos</a></li>
+                    <li><a href="bilheteria.html">Bilhereria</a></li>
+                </ul>
+            </nav>            
+        </div> 
     </header>
     <main>
-        <section class="bg-off-white pb-xl">
+        <div class="bg-off-white pb-xl">
+            <h2 class="title-wave title-wave-orange-100 color-pink flex">Informações Úteis</h2>
+        </div>
+        <section class="bg-off-white pb-m">
             <div class="wrapper">
                 <div class="stack stack:m">
-                    <h2 class="title-wave title-wave-orange-100 color-pink flex">Informações Úteis</h2>
+                    <h3 class="text-step-3 text-uppercase color-green-100 ff-salomfu flex gap:s align-items:center">
+                        <svg width="80" height="68" viewBox="0 0 80 68" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M80 33.7973V62.5974C80 65.2374 77.84 67.3974 75.2 67.3974H28.8C27.92 67.3974 27.2 66.6774 27.2 65.7974C27.2 64.9174 27.92 64.1974 28.8 64.1974H51.2V32.1973H4.8C3.92 32.1973 3.2 32.9174 3.2 33.7973V40.3573C6.88 41.0774 9.6 44.2774 9.6 48.1973C9.6 52.0373 6.88 55.2374 3.2 56.0373V62.5974C3.2 63.4774 3.92 64.1974 4.8 64.1974H22.4C23.28 64.1974 24 64.9174 24 65.7974C24 66.6774 23.28 67.3974 22.4 67.3974H4.8C2.16 67.3974 0 65.2374 0 62.5974V54.5974C0 53.7174 0.72 52.9974 1.6 52.9974C4.24 52.9974 6.4 50.8374 6.4 48.1973C6.4 45.5574 4.24 43.3974 1.6 43.3974C0.72 43.3974 0 42.6774 0 41.7974V33.7973C0 31.1573 2.16 28.9973 4.8 28.9973H7.12L16.56 3.63735C17.04 2.43735 17.92 1.47735 19.04 0.997351C20.24 0.437351 21.52 0.437352 22.72 0.837352L42.16 8.11735C42.96 8.43735 43.44 9.31735 43.12 10.1974C42.8 10.9974 41.84 11.3974 41.04 11.0774L21.6 3.87735C21.2 3.71735 20.8 3.71735 20.4 3.87735C20 4.03735 19.68 4.35735 19.52 4.75735L10.48 28.9973H72L73.52 24.9973C73.68 24.5173 73.6 24.1174 73.44 23.7174C73.28 23.3174 72.96 23.0774 72.56 22.9174L47.44 13.4774C46.64 13.2374 46.16 12.2774 46.48 11.4774C46.8 10.5974 47.76 10.1974 48.56 10.5174L73.68 19.8774C74.88 20.3574 75.84 21.2373 76.4 22.4373C76.88 23.5573 76.96 24.9174 76.48 26.1174L75.44 28.9973C77.92 29.0773 80 31.1573 80 33.7973ZM76.8 51.3974H54.4V64.1974H75.2C76.08 64.1974 76.8 63.4774 76.8 62.5974V51.3974ZM76.8 33.7973C76.8 32.9174 76.08 32.1973 75.2 32.1973H54.4V48.1973H76.8V33.7973Z" fill="#00A44F"/>
+                            <path d="M72.0004 60.9973C72.8804 60.9973 73.6004 60.2773 73.6004 59.3973V56.1973C73.6004 55.3173 72.8804 54.5973 72.0004 54.5973C71.1204 54.5973 70.4004 55.3173 70.4004 56.1973V59.3973C70.4004 60.2773 71.1204 60.9973 72.0004 60.9973Z" fill="#00A44F"/>
+                            <path d="M65.6 60.9973C66.48 60.9973 67.2 60.2773 67.2 59.3973V56.1973C67.2 55.3173 66.48 54.5973 65.6 54.5973C64.72 54.5973 64 55.3173 64 56.1973V59.3973C64 60.2773 64.72 60.9973 65.6 60.9973Z" fill="#00A44F"/>
+                            <path d="M59.1996 60.9973C60.0796 60.9973 60.7996 60.2773 60.7996 59.3973V56.1973C60.7996 55.3173 60.0796 54.5973 59.1996 54.5973C58.3196 54.5973 57.5996 55.3173 57.5996 56.1973V59.3973C57.5996 60.2773 58.3196 60.9973 59.1996 60.9973Z" fill="#00A44F"/>
+                            <path d="M71.9996 35.3972H59.1996C58.3196 35.3972 57.5996 36.1172 57.5996 36.9972C57.5996 37.8772 58.3196 38.5972 59.1996 38.5972H71.9996C72.8796 38.5972 73.5996 37.8772 73.5996 36.9972C73.5996 36.1172 72.8796 35.3972 71.9996 35.3972Z" fill="#00A44F"/>
+                            <path d="M68.7996 41.7973H59.1996C58.3196 41.7973 57.5996 42.5173 57.5996 43.3973C57.5996 44.2773 58.3196 44.9973 59.1996 44.9973H68.7996C69.6796 44.9973 70.3996 44.2773 70.3996 43.3973C70.3996 42.5173 69.6796 41.7973 68.7996 41.7973Z" fill="#00A44F"/>
+                            <path fill-rule="evenodd" clip-rule="evenodd" d="M36.6404 42.5173L34.5604 46.5973H37.2804L38.4804 42.8373C38.7204 42.1973 39.2804 41.7973 40.0004 41.7973H44.8004C45.6804 41.7973 46.4004 42.5173 46.4004 43.3973V51.3973C46.4004 54.0373 44.2404 56.1973 41.6004 56.1973H18.0804C16.0804 56.1973 14.4004 54.5173 14.4004 52.5173C14.4004 51.2373 15.0404 50.1173 16.0804 49.3973L19.9204 46.8373C20.1871 46.6773 20.4804 46.5973 20.8004 46.5973H24.8004L29.1204 40.8373C29.4404 40.4373 29.9204 40.1973 30.4004 40.1973H35.2004C35.7604 40.1973 36.2404 40.4373 36.5604 40.9173C36.8804 41.3973 36.8804 41.9573 36.6404 42.5173ZM32.0004 49.7973C31.4404 49.7973 30.9604 49.4773 30.6404 48.9973C30.3204 48.5173 30.3204 47.9573 30.5604 47.4773L32.6404 43.3973H31.2004L26.8804 49.1573C26.5604 49.5573 26.0804 49.7973 25.6004 49.7973H21.2804L17.8404 52.1173C17.6804 52.1973 17.6004 52.3573 17.6004 52.5173C17.6004 52.7573 17.8404 52.9973 18.0804 52.9973H41.6004C42.4804 52.9973 43.2004 52.2773 43.2004 51.3973V44.9973H41.1204L39.9204 48.6773C39.6804 49.3173 39.1204 49.7973 38.4004 49.7973H32.0004Z" fill="#00A44F"/>
+                            <path d="M6.40039 36.9972C6.40039 37.8772 7.12039 38.5972 8.00039 38.5972C8.88039 38.5972 9.60039 37.8772 9.60039 36.9972C9.60039 36.1172 8.88039 35.3972 8.00039 35.3972C7.12039 35.3972 6.40039 36.1172 6.40039 36.9972Z" fill="#00A44F"/>
+                            <path d="M6.40039 59.3973C6.40039 60.2773 7.12039 60.9973 8.00039 60.9973C8.88039 60.9973 9.60039 60.2773 9.60039 59.3973C9.60039 58.5173 8.88039 57.7973 8.00039 57.7973C7.12039 57.7973 6.40039 58.5173 6.40039 59.3973Z" fill="#00A44F"/>
+                            <path d="M46.3998 35.3973C45.5198 35.3973 44.7998 36.1173 44.7998 36.9973C44.7998 37.8773 45.5198 38.5973 46.3998 38.5973C47.2798 38.5973 47.9998 37.8773 47.9998 36.9973C47.9998 36.1173 47.2798 35.3973 46.3998 35.3973Z" fill="#00A44F"/>
+                            <path d="M46.3998 57.7973C45.5198 57.7973 44.7998 58.5173 44.7998 59.3973C44.7998 60.2773 45.5198 60.9973 46.3998 60.9973C47.2798 60.9973 47.9998 60.2773 47.9998 59.3973C47.9998 58.5173 47.2798 57.7973 46.3998 57.7973Z" fill="#00A44F"/>
+                        </svg>                                
+                        Como chegar
+                    </h3>
+                    <div class="stack stack:m">
+                        <h3 class="text-uppercase">Companhias:</h3>
+                        <div class="with-sidebar left-sidebar reservation-sidebar gap:m">
+                            <div>
+                                <img class="img-border" src="assets/img/aerodili.webp" alt="">
+                            </div>
+                            <div class="stack stack:xs justify-content:center">
+                                <h3 class="text-ste--1 text-uppercase color-blue-100 fw-bold">Aerodili</h3>
+                                <a class="btn btn:primary btn:medium bg-yellow color-blue-50 text-step--1" href="https://www.aerodili.com/" target="_blank">Reservar</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stack stack:m">
+                        <div class="with-sidebar left-sidebar reservation-sidebar gap:m">
+                            <div>
+                                <img class="img-border" src="assets/img/quantas.webp" alt="">
+                            </div>
+                            <div class="stack stack:xs justify-content:center">
+                                <h3 class="text-ste--1 text-uppercase color-blue-100 fw-bold">Quantas</h3>
+                                <a class="btn btn:primary btn:medium bg-yellow color-blue-50 text-step--1" href="https://www.qantas.com/" target="_blank">Reservar</a>
+                            </div>
+                        </div>
+                    </div>                    
+                </div>
+            </div>
+        </section> <!-- Como Chegar-->
+        <section class="bg-off-white pb-m">
+            <div class="wrapper">
+                <div class="stack stack:m">
                     <h3 class="text-step-3 text-uppercase color-orange-100 ff-salomfu flex gap:s align-items:center">
                         <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M24.3991 1.18703C24.2476 1.0554 24.0237 0.922595 23.8869 0.88593C23.75 0.849265 23.5556 0.906378 23.4295 0.981838C23.3167 1.07904 23.0758 1.57894 22.9074 2.07998C22.7218 2.57644 21.5749 7.05738 20.3318 12.0405C19.0887 17.0237 17.9887 21.2987 17.871 21.5767C17.6854 22.0731 17.6683 22.0686 16.8878 21.7502C16.4548 21.5795 13.6931 20.2387 10.7285 18.7525C6.45799 16.6251 5.00747 15.9816 3.71144 15.6161C2.27857 15.2139 1.99318 15.1921 1.61891 15.4013C1.37069 15.5351 1.13325 15.7809 1.11521 15.94C1.07615 16.1116 1.18619 16.5052 1.34996 16.8221C1.50983 17.1563 2.35401 18.311 3.24803 19.4063C4.13814 20.5187 5.74921 22.3704 6.84067 23.555C7.93213 24.7396 9.29632 26.1611 9.87747 26.7173C10.4586 27.2736 10.9411 27.7852 10.9254 27.8538C10.9059 27.9396 9.59344 28.4436 8.01808 28.9865C6.43882 29.5464 4.43007 30.319 3.54468 30.7008C2.65539 31.0998 1.643 31.7206 1.25068 32.0888C0.854454 32.4742 0.514922 32.9294 0.471961 33.1182C0.428998 33.307 0.448124 33.6216 0.528799 33.8253C0.641259 34.1285 0.834796 34.235 1.46227 34.3485C1.9016 34.4116 3.39158 34.4831 4.79064 34.4757C6.18579 34.4854 8.91402 34.3789 10.8296 34.255L14.3333 34.0103C13.9772 34.6978 13.5571 35.5866 13.1659 36.4285C12.7747 37.2704 11.766 39.549 10.9118 41.4685C10.0746 43.3925 9.33713 45.1976 9.27073 45.4893C9.18723 45.7764 9.24205 46.1734 9.37404 46.3909C9.54563 46.6735 9.75236 46.8018 10.1101 46.8248C10.3994 46.8295 10.9261 46.5883 11.4289 46.2132C11.8686 45.8759 12.7784 45.2275 13.4204 44.7987C14.0834 44.3574 16.3427 42.7234 18.4719 41.182C20.588 39.6189 22.3826 38.3519 22.4682 38.3749C22.5366 38.3932 22.8182 39.0695 23.0896 39.8704C23.382 40.6588 24.0015 42.4816 24.4729 43.9187C24.9443 45.3559 25.5702 47.0711 25.8689 47.752C26.1505 48.4283 26.7304 49.5485 27.1395 50.2226C27.6108 51.0225 28.0077 51.5112 28.2642 51.5799C28.4695 51.6349 28.7798 51.627 28.9362 51.5779C29.1517 51.5082 29.3675 51.0381 29.7108 49.9284C29.9613 49.067 30.7952 45.7221 31.5295 42.496C32.2848 39.2574 32.9204 36.624 32.9718 36.6377C33.0231 36.6515 33.8779 37.281 34.8842 38.0422C35.8696 38.816 37.305 39.7651 38.0659 40.1692C38.823 40.5906 39.9338 41.0521 40.5496 41.2171C41.4009 41.4634 41.7454 41.4647 42.0186 41.3012C42.2287 41.1754 42.4436 40.8688 42.5061 40.5943C42.5647 40.3369 42.5147 39.7591 42.4203 39.2969C42.3049 38.8472 41.8706 37.5656 41.4697 36.4569C41.0687 35.3481 40.2332 33.3582 39.624 32.048L38.5166 29.6575C42.2307 28.2495 44.0933 27.4013 45.052 26.8571C46.0277 26.3175 47.1149 25.6074 47.4652 25.2644C47.8287 24.943 48.2273 24.4672 48.3754 24.2156C48.5429 23.8781 48.5595 23.6459 48.4182 23.3896C48.3165 23.1985 48.0095 22.9524 47.7305 22.823C47.4514 22.6936 45.9903 22.5751 44.2545 22.547C42.6082 22.5246 40.7146 22.4724 40.0163 22.4309C39.335 22.394 38.2526 22.2861 37.6554 22.1989L36.5334 22.0257C36.992 20.7285 37.7601 17.912 38.5501 14.9194C39.3572 11.9314 40.0241 9.16064 40.0587 8.76938C40.0933 8.37812 40.0331 7.92503 39.9065 7.76366C39.7931 7.62404 39.5009 7.47293 39.2497 7.46024C38.9091 7.4418 38.3853 7.82943 37.0798 9.09999C36.1418 10.0321 33.9916 12.2233 32.3218 13.9788C30.6348 15.7297 29.0396 17.396 28.7695 17.7059L28.2696 18.2275C27.3258 12.5673 26.7363 9.49632 26.3562 7.73771C25.9761 5.97909 25.4308 3.83027 25.154 2.97324C24.8772 2.11621 24.5374 1.29692 24.3991 1.18703Z" fill="#FF3400"/>
-                            </svg>
-                            
+                        </svg>                            
                         Onde Ficar
                     </h3>
                     <div class="stack stack:m">
-                        <div class="with-sidebar reservation-sidebar gap:m">
-                            <div style="width: 280px;">
+                        <div class="with-sidebar left-sidebar reservation-sidebar gap:m">
+                            <div>
                                 <img class="img-border" src="assets/img/hotel-timor.jpg" alt="">
                             </div>
                             <div class="stack stack:xs justify-content:center">
                                 <h3 class="text-ste--1 text-uppercase color-blue-100 fw-bold">Hotel Timor</h3>
-                                <div class="text-step--2 color-blue-100">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                </div>
                                 <a class="btn btn:primary btn:medium bg-yellow color-blue-50 text-step--1" href="https://www.booking.com/hotel/tl/timor.en-gb.html?aid=2276374&label=msn-pi2Wxv0ghFr0gDxkczP4SA-80195767947921%3Atikwd-80195916649944%3Aloc-222%3Aneo%3Amte%3Alp222%3Adec%3Aqshotel%20timor%20dili&sid=56db59030569dccaa2f89f8458fcabd2&dest_id=900050624&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1738676717&srpvid=a80360b2ff0600ad&type=total&ucfs=1&" target="_blank">Reservar</a>
                             </div>
                         </div>
                     </div>
                     <div class="stack stack:m">
-                        <div class="with-sidebar reservation-sidebar gap:m">
-                            <div style="width: 280px;">
+                        <div class="with-sidebar left-sidebar reservation-sidebar gap:m">
+                            <div>
                                 <img class="img-border" src="assets/img/timor-plaza.jpg" alt="">
                             </div>
                             <div class="stack stack:xs justify-content:center">
                                 <h3 class="text-ste--1 text-uppercase color-blue-100 fw-bold">Timor Plaza Hotel & Apartments</h3>
-                                <div class="text-step--2 color-blue-100">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                </div>
                                 <a class="btn btn:primary btn:medium bg-yellow color-blue-50 text-step--1" href="https://www.booking.com/hotel/tl/timor-plaza-amp-apartments.en-gb.html?aid=2276374&label=msn-pi2Wxv0ghFr0gDxkczP4SA-80195767947921%3Atikwd-80195916649944%3Aloc-222%3Aneo%3Amte%3Alp222%3Adec%3Aqshotel%20timor%20dili&sid=56db59030569dccaa2f89f8458fcabd2&dest_id=900050624&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=5&hpos=5&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1738677218&srpvid=d349618f2ed60297&type=total&ucfs=1&" target="_blank">Reservar</a>
                             </div>
                         </div>
                     </div>
                     <div class="stack stack:m">
-                        <div class="with-sidebar reservation-sidebar gap:m">
-                            <div style="width: 280px;">
+                        <div class="with-sidebar left-sidebar reservation-sidebar gap:m">
+                            <div>
                                 <img class="img-border" src="assets/img/palm-spring.jpg" alt="">
                             </div>
                             <div class="stack stack:xs justify-content:center">
                                 <h3 class="text-ste--1 text-uppercase color-blue-100 fw-bold">Palm Springs Hotel</h3>
-                                <div class="text-step--2 color-blue-100">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                </div>
                                 <a class="btn btn:primary btn:medium bg-yellow color-blue-50 text-step--1" href="https://www.booking.com/hotel/tl/palm-springs-dili.en-gb.html?aid=2276374&label=msn-pi2Wxv0ghFr0gDxkczP4SA-80195767947921%3Atikwd-80195916649944%3Aloc-222%3Aneo%3Amte%3Alp222%3Adec%3Aqshotel%20timor%20dili&sid=56db59030569dccaa2f89f8458fcabd2&dest_id=900050624&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=14&hpos=14&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1738677336&srpvid=921f61e5b07100c8&type=total&ucfs=1&" target="_blank">Reservar</a>
                             </div>
                         </div>
                     </div>
                     <div class="stack stack:m">
-                        <div class="with-sidebar reservation-sidebar gap:m">
-                            <div style="width: 280px;">
+                        <div class="with-sidebar left-sidebar reservation-sidebar gap:m">
+                            <div>
                                 <img class="img-border" src="assets/img/sunset-inn.jpg" alt="">
                             </div>
                             <div class="stack stack:xs justify-content:center">
                                 <h3 class="text-ste--1 text-uppercase color-blue-100 fw-bold">Sunset Inn by Pro-ema</h3>
-                                <div class="text-step--2 color-blue-100">
-                                    <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.</p>
-                                </div>
                                 <a class="btn btn:primary btn:medium bg-yellow color-blue-50 text-step--1" href="https://www.booking.com/hotel/tl/sunset-inn-by-pro-ema.en-gb.html?aid=2276374&label=msn-pi2Wxv0ghFr0gDxkczP4SA-80195767947921%3Atikwd-80195916649944%3Aloc-222%3Aneo%3Amte%3Alp222%3Adec%3Aqshotel%20timor%20dili&sid=56db59030569dccaa2f89f8458fcabd2&dest_id=900050624&dest_type=city&dist=0&group_adults=2&group_children=0&hapos=1&hpos=1&no_rooms=1&req_adults=2&req_children=0&room1=A%2CA&sb_price_type=total&sr_order=popularity&srepoch=1738677161&srpvid=d349618f2ed60297&type=total&ucfs=1&" target="_blank">Reservar</a>
                             </div>
                         </div>
                     </div>
-                    <!--<div class="swiper swiper-where">
-                        <div class="swiper-wrapper">
-                            <div class="swiper-slide">
-                                <img class="img-border img-border:yellow" src="assets/img/poster-edicao-passada.webp" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-border img-border:yellow" src="assets/img/poster-edicao-passada.webp" alt="">
-                            </div>
-                            <div class="swiper-slide">
-                                <img class="img-border img-border:yellow" src="assets/img/poster-edicao-passada.webp" alt="">
-                            </div>                                                
-                        </div>
-                        <div class="swiper-pagination"></div>
-                    </div>-->
+                    
                 </div>
             </div>
-        </section>
-        <section class="bg-off-white pb-l">
+        </section><!-- Onde Ficar -->
+        <section class="bg-off-white pb-m">
             <div class="wrapper">
-                <div class="switcher switcher-address gap:m">
+                <div class="grid gallery-grid">
+                    <div class="stack stack:m">
+                        <h3 class="text-step-3 text-uppercase color-blue-50 ff-salomfu flex gap:s align-items:center">
+                            <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M48 12.1527V28.1527C48 29.0327 47.28 29.7527 46.4 29.7527C45.52 29.7527 44.8 29.0327 44.8 28.1527V12.1527C44.8 11.2727 44.08 10.5527 43.2 10.5527H4.8C3.92 10.5527 3.2 11.2727 3.2 12.1527V39.3527H44.8V34.5527C44.8 33.6727 45.52 32.9527 46.4 32.9527C47.28 32.9527 48 33.6727 48 34.5527V60.1527C48 62.7927 45.84 64.9527 43.2 64.9527H37.52L42.88 78.7927C43.04 79.2727 42.96 79.8327 42.72 80.2327C42.4 80.7127 41.92 80.9527 41.36 80.9527H35.28C34.64 80.9527 34.08 80.5527 33.84 79.9927L31.6 74.5527H16.4L14.16 79.9927C13.92 80.5527 13.36 80.9527 12.72 80.9527H6.64C6.08 80.9527 5.6 80.7127 5.28 80.2327C5.04 79.8327 4.96 79.2727 5.12 78.7927L10.48 64.9527H4.8C2.16 64.9527 0 62.7927 0 60.1527V12.1527C0 9.51267 2.16 7.35267 4.8 7.35267H11.2V5.75267C11.2 3.11267 13.36 0.952667 16 0.952667H32C34.64 0.952667 36.8 3.11267 36.8 5.75267V7.35267H43.2C45.84 7.35267 48 9.51267 48 12.1527ZM11.2 61.7527V58.3127C8.96 57.7527 7.2 55.9927 6.64 53.7527H3.2V60.1527C3.2 61.0327 3.92 61.7527 4.8 61.7527H11.2ZM16.8 64.9527H13.92L8.96 77.7527H11.6L16.8 64.9527ZM30.32 71.3527L27.68 64.9527H20.24L17.68 71.3527H30.32ZM34.08 64.9527H31.12L36.32 77.7527H38.96L34.08 64.9527ZM44.8 53.7527H41.36C40.8 55.9927 39.04 57.7527 36.8 58.3127V61.7527H43.2C44.08 61.7527 44.8 61.0327 44.8 60.1527V53.7527ZM36.8 45.9927C39.04 46.5527 40.8 48.3127 41.36 50.5527H44.8V42.5527H36.8V45.9927ZM35.2 48.9527C33.44 48.9527 32 50.3927 32 52.1527C32 53.9127 33.44 55.3527 35.2 55.3527C36.96 55.3527 38.4 53.9127 38.4 52.1527C38.4 50.3927 36.96 48.9527 35.2 48.9527ZM14.4 45.9927C17.2 46.7127 19.2 49.1927 19.2 52.1527C19.2 55.1127 17.2 57.5927 14.4 58.3127V61.7527H33.6V58.3127C30.88 57.5927 28.8 55.1127 28.8 52.1527C28.8 49.1927 30.88 46.7127 33.6 45.9927V42.5527H14.4V45.9927ZM12.8 48.9527C11.04 48.9527 9.6 50.3927 9.6 52.1527C9.6 53.9127 11.04 55.3527 12.8 55.3527C14.56 55.3527 16 53.9127 16 52.1527C16 50.3927 14.56 48.9527 12.8 48.9527ZM3.2 42.5527V50.5527H6.64C7.2 48.3127 8.96 46.6327 11.2 45.9927V42.5527H3.2ZM33.6 5.75267C33.6 4.87267 32.88 4.15267 32 4.15267H16C15.12 4.15267 14.4 4.87267 14.4 5.75267V7.35267H33.6V5.75267Z" fill="#2111DD"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M40.0004 13.7527C40.8804 13.7527 41.6004 14.4727 41.6004 15.3527V31.3527C41.6004 32.1527 41.0404 32.7927 40.3204 32.9527L24.3204 36.1527C24.2137 36.1527 24.1071 36.1527 24.0004 36.1527C23.8937 36.1527 23.7871 36.1527 23.6804 36.1527L7.68039 32.9527C6.96039 32.7927 6.40039 32.1527 6.40039 31.3527V15.3527C6.40039 14.4727 7.12039 13.7527 8.00039 13.7527H40.0004ZM22.4004 16.9527H9.60039V30.0727L22.4004 32.6327V16.9527ZM38.4004 16.9527H25.6004V32.5527L38.4004 29.9927V16.9527Z" fill="#2111DD"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M80.0002 2.55267V79.3527C80.0002 80.2327 79.2802 80.9527 78.4002 80.9527H52.8002C51.9202 80.9527 51.2002 80.2327 51.2002 79.3527V63.3527C51.2002 62.4727 51.9202 61.7527 52.8002 61.7527H60.8002C61.6802 61.7527 62.4002 62.4727 62.4002 63.3527C62.4002 64.2327 61.6802 64.9527 60.8002 64.9527H54.4002V77.7527H76.8002V64.9527H67.2002C66.3202 64.9527 65.6002 64.2327 65.6002 63.3527C65.6002 62.4727 66.3202 61.7527 67.2002 61.7527H76.8002V4.15267H68.8002V7.35267C71.4402 7.35267 73.6002 9.51267 73.6002 12.1527V15.3527C73.6002 17.9927 71.4402 20.1527 68.8002 20.1527H59.2002C56.5602 20.1527 54.4002 17.9927 54.4002 15.3527V12.1527C54.4002 9.51267 56.5602 7.35267 59.2002 7.35267V4.15267H52.8002C51.9202 4.15267 51.2002 3.43267 51.2002 2.55267C51.2002 1.67267 51.9202 0.952667 52.8002 0.952667H78.4002C79.2802 0.952667 80.0002 1.67267 80.0002 2.55267ZM62.4002 7.35267H65.6002V4.15267H62.4002V7.35267ZM68.8002 10.5527H59.2002C58.3202 10.5527 57.6002 11.2727 57.6002 12.1527V15.3527C57.6002 16.2327 58.3202 16.9527 59.2002 16.9527H68.8002C69.6802 16.9527 70.4002 16.2327 70.4002 15.3527V12.1527C70.4002 11.2727 69.6802 10.5527 68.8002 10.5527Z" fill="#2111DD"/>
+                                </svg>                                                          
+                            Transporte em Dili
+                        </h3>
+                        <div class="stack stack:3xs color-blue-100">
+                            <p>Díli oferece diversas opções de transporte, incluindo táxis e microletes, o tradicional meio de transporte coletivo urbano.</p>
+                            <p>Terá ainda à sua disposição um serviço de shuttle que ligará o recinto do festival ao centro da cidade.</p>
+                            <p>Tendo a sustentabilidade no pensamento, incentivamos o uso de transportes públicos ou do shuttle, caso ainda assim opte por utilizar transporte próprio, haverá um amplo parque de estacionamento nas proximidades do festival para maior comodidade.</p>
+                            
+                        </div>
+                        <img src="assets/img/shuttle.webp" alt="">                   
+                    </div>
+                    <div class="stack stack:m">
+                        <h3 class="text-step-3 text-uppercase color-orange-100 ff-salomfu flex gap:s align-items:center">
+                            <svg width="80" height="74" viewBox="0 0 80 74" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M80 8.14836V65.7484C80 66.2284 79.76 66.7084 79.36 67.0284C78.96 67.3484 78.48 67.4284 78 67.2684L52.96 61.0284L27.92 73.5884C27.6 73.7484 27.2 73.7484 26.8 73.6684L10.8 69.6684C9.92 69.5084 9.44 68.6284 9.68 67.7484C9.84 66.8684 10.72 66.3884 11.6 66.6283L14.4 67.2684V65.7484C14.4 64.1484 15.44 62.6284 17.04 62.1484L18.72 61.5084C19.04 61.4284 19.2 61.1884 19.2 60.9484V60.7084C19.2 59.2684 20 57.9084 21.36 57.2684L22.8 56.5484C23.36 56.3084 23.92 56.1484 24.56 56.1484H25.6V41.7484C25.6 40.8684 26.32 40.1484 27.2 40.1484C28.08 40.1484 28.8 40.8684 28.8 41.7484V56.1484H30.4C30.64 56.1484 30.88 55.9884 30.96 55.6684L31.76 53.3484C32.08 52.3884 32.8 51.5884 33.76 51.1084L35.76 50.0684C35.8133 50.0684 35.8667 50.0417 35.92 49.9884L37.28 48.6284C38.8 47.1084 41.2 47.1084 42.72 48.6284L43.68 49.5884C43.7867 49.695 43.9467 49.7484 44.16 49.7484C46.24 49.7484 48 51.5084 48 53.5884V55.7484C48 55.855 48 55.935 48 55.9884L49.2 59.3484L51.2 58.3884V4.30836L28.8 15.5084V22.5484C29.68 22.5484 30.4 23.2684 30.4 24.1484C30.4 25.0284 29.68 25.7484 28.8 25.7484V35.3484C28.8 36.2284 28.08 36.9484 27.2 36.9484C26.32 36.9484 25.6 36.2284 25.6 35.3484V25.7484C24.72 25.7484 24 25.0284 24 24.1484C24 23.2684 24.72 22.5484 25.6 22.5484V15.8284L3.2 10.2284V64.4684L5.2 65.0284C6.08 65.1884 6.56 66.0684 6.32 66.9484C6.16 67.8284 5.28 68.3084 4.4 68.0684L1.2 67.2684C0.48 67.1084 0 66.4684 0 65.7484V8.14836C0 7.66836 0.24 7.18836 0.64 6.86836C1.04 6.54836 1.52 6.46836 2 6.62836L27.04 12.8684L52.08 0.308358C52.4 0.148358 52.8 0.0683573 53.2 0.228357L78.8 6.62836C79.52 6.78836 80 7.42836 80 8.14836ZM25.6 59.3484H24.56C24.4533 59.3484 24.3467 59.375 24.24 59.4284L22.8 60.1484C22.56 60.2284 22.4 60.4684 22.4 60.7084V60.9484C22.4 62.5484 21.36 64.0684 19.76 64.5484L18.08 65.1884C17.76 65.2684 17.6 65.5084 17.6 65.7484V68.0684L25.6 70.0684V59.3484ZM46.24 60.8684L44.96 57.0284C44.8533 56.655 44.8 56.255 44.8 55.8284V53.6684C44.8 53.2684 44.48 52.9484 44.16 52.9484C43.12 52.9484 42.16 52.5484 41.44 51.8284L40.48 50.8684C40.24 50.6284 39.76 50.6284 39.52 50.9484L38.16 52.2284C37.8933 52.5484 37.5733 52.7884 37.2 52.9484L35.12 53.9884C34.96 54.095 34.8533 54.2284 34.8 54.3884L34 56.7084C33.52 58.3084 32 59.3484 30.4 59.3484H28.8V69.5884L46.24 60.8684ZM76.8 54.3884L76 54.8684C74.48 55.9084 72.4 55.7484 71.12 54.3884L69.92 53.1884C69.2 52.4684 68.8 51.5084 68.8 50.4684C68.8 50.0684 68.48 49.8284 68.08 49.8284H67.2C66.88 49.8284 66.64 49.9884 66.56 50.2284L65.84 52.3884C65.44 53.5884 64.56 54.4684 63.36 54.8684L61.68 55.4284C61.36 55.5884 61.12 55.9084 61.2 56.2284L62.16 60.0684L76.8 63.7484V54.3884ZM76.8 9.42836L54.4 3.82836V41.8284H57.6C58.48 41.8284 59.2 42.5484 59.2 43.4284C59.2 44.3084 58.48 45.0284 57.6 45.0284H54.4V58.1484L58.64 59.1884L58.16 57.0284C57.6 55.0284 58.72 53.0284 60.64 52.3884L62.4 51.8284C62.56 51.7484 62.72 51.5884 62.8 51.4284L63.52 49.2684C64.08 47.6684 65.52 46.6284 67.2 46.6284H68.08C70.24 46.6284 72 48.3084 72 50.4684C72 50.6284 72.0533 50.7884 72.16 50.9484L73.36 52.1484C73.6 52.3884 74 52.3884 74.24 52.2284L76.8 50.5484V9.42836Z" fill="#FF3400"/>
+                                <path d="M13.2804 55.6684C13.8404 56.2284 14.8804 56.3084 15.5204 55.6684C16.1604 55.0284 16.1604 54.0684 15.5204 53.4284L13.4404 51.3484L15.5204 49.2684C16.1604 48.6284 16.1604 47.6684 15.5204 47.0284C14.8804 46.3884 13.9204 46.3884 13.2804 47.0284L11.2004 49.1084L9.12039 47.0284C8.48039 46.3884 7.52039 46.3884 6.88039 47.0284C6.24039 47.6684 6.24039 48.6284 6.88039 49.2684L8.96039 51.3484L6.88039 53.4284C6.24039 54.0684 6.24039 55.0284 6.88039 55.6684C7.44039 56.3084 8.48039 56.3084 9.12039 55.6684L11.2004 53.5884L13.2804 55.6684Z" fill="#FF3400"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M57.5996 17.7483C57.5996 13.3483 61.1996 9.74832 65.5996 9.74832C69.9996 9.74832 73.5996 13.3483 73.5996 17.7483C73.5996 21.7483 67.8396 27.4283 66.7196 28.4683C66.3996 28.7883 65.9996 28.9483 65.5996 28.9483C65.1996 28.9483 64.7996 28.7883 64.4796 28.4683C63.3596 27.4283 57.5996 21.7483 57.5996 17.7483ZM60.7996 17.7483C60.7996 19.4283 63.3596 22.7083 65.5996 25.1083C67.8396 22.7083 70.3996 19.4283 70.3996 17.7483C70.3996 15.1083 68.2396 12.9483 65.5996 12.9483C62.9596 12.9483 60.7996 15.1083 60.7996 17.7483Z" fill="#FF3400"/>
+                                <path d="M67.2 17.7483C67.2 16.8683 66.48 16.1483 65.6 16.1483C64.72 16.1483 64 16.8683 64 17.7483C64 18.6283 64.72 19.3483 65.6 19.3483C66.48 19.3483 67.2 18.6283 67.2 17.7483Z" fill="#FF3400"/>
+                                <path d="M65.6 30.5483C64.72 30.5483 64 31.2683 64 32.1483V35.3483C64 36.2283 64.72 36.9483 65.6 36.9483C66.48 36.9483 67.2 36.2283 67.2 35.3483V32.1483C67.2 31.2683 66.48 30.5483 65.6 30.5483Z" fill="#FF3400"/>
+                                <path d="M65.5998 38.5483C64.7198 38.5483 63.9998 39.2683 63.9998 40.1483C63.9998 41.0283 63.2798 41.7483 62.3998 41.7483C61.5198 41.7483 60.7998 42.4683 60.7998 43.3483C60.7998 44.2283 61.5198 44.9483 62.3998 44.9483C65.0398 44.9483 67.1998 42.7883 67.1998 40.1483C67.1998 39.2683 66.4798 38.5483 65.5998 38.5483Z" fill="#FF3400"/>
+                                <path d="M48.0002 44.9483C48.8802 44.9483 49.6002 44.2283 49.6002 43.3483C49.6002 42.4683 48.8802 41.7483 48.0002 41.7483C47.1202 41.7483 46.4002 41.0283 46.4002 40.1483C46.4002 39.2683 45.6802 38.5483 44.8002 38.5483C43.9202 38.5483 43.2002 39.2683 43.2002 40.1483C43.2002 42.7883 45.3602 44.9483 48.0002 44.9483Z" fill="#FF3400"/>
+                                <path d="M44.8002 36.9483C45.6802 36.9483 46.4002 36.2283 46.4002 35.3483V32.1483C46.4002 31.2683 45.6802 30.5483 44.8002 30.5483C43.9202 30.5483 43.2002 31.2683 43.2002 32.1483V35.3483C43.2002 36.2283 43.9202 36.9483 44.8002 36.9483Z" fill="#FF3400"/>
+                                <path d="M41.6 22.5483C40.72 22.5483 40 23.2683 40 24.1483C40 25.0283 40.72 25.7483 41.6 25.7483C42.48 25.7483 43.2 26.4683 43.2 27.3483C43.2 28.2283 43.92 28.9483 44.8 28.9483C45.68 28.9483 46.4 28.2283 46.4 27.3483C46.4 24.7083 44.24 22.5483 41.6 22.5483Z" fill="#FF3400"/>
+                                <path d="M36.8 25.7483C37.68 25.7483 38.4 25.0283 38.4 24.1483C38.4 23.2683 37.68 22.5483 36.8 22.5483H33.6C32.72 22.5483 32 23.2683 32 24.1483C32 25.0283 32.72 25.7483 33.6 25.7483H36.8Z" fill="#FF3400"/>
+                                <path d="M20.8 25.7483C21.68 25.7483 22.4 25.0283 22.4 24.1483C22.4 23.2683 21.68 22.5483 20.8 22.5483H17.6C16.72 22.5483 16 23.2683 16 24.1483C16 25.0283 16.72 25.7483 17.6 25.7483H20.8Z" fill="#FF3400"/>
+                                <path d="M9.6 28.9483C10.48 28.9483 11.2 28.2283 11.2 27.3483C11.2 26.4683 11.92 25.7483 12.8 25.7483C13.68 25.7483 14.4 25.0283 14.4 24.1483C14.4 23.2683 13.68 22.5483 12.8 22.5483C10.16 22.5483 8 24.7083 8 27.3483C8 28.2283 8.72 28.9483 9.6 28.9483Z" fill="#FF3400"/>
+                                <path d="M8 35.3483C8 36.2283 8.72 36.9483 9.6 36.9483C10.48 36.9483 11.2 36.2283 11.2 35.3483V32.1483C11.2 31.2683 10.48 30.5483 9.6 30.5483C8.72 30.5483 8 31.2683 8 32.1483V35.3483Z" fill="#FF3400"/>
+                                <path d="M8 43.3483C8 44.2283 8.72 44.9483 9.6 44.9483C10.48 44.9483 11.2 44.2283 11.2 43.3483V40.1483C11.2 39.2683 10.48 38.5483 9.6 38.5483C8.72 38.5483 8 39.2683 8 40.1483V43.3483Z" fill="#FF3400"/>
+                                </svg>                                                                                        
+                            O Recinto
+                        </h3>
+                        <div class="stack stack:xs color-blue-100">
+                            <div class="gmaps">
+                                <iframe src="https://www.google.com/maps/d/embed?mid=1uf8cqFR9ZKG8ywgAqY2zQPq12cxALUY&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
+                            </div>
+                        </div>                   
+                    </div>
+                </div>
+                <div class="grid gallery-grid pb-m">
+                    <div class="stack stack:m">
+                        <h3 class="text-step-3 text-uppercase color-blue-100 ff-salomfu flex gap:s align-items:center">
+                            <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M35.1996 27.3789C34.3196 27.3789 33.5996 28.0989 33.5996 28.9789C33.5996 29.8589 34.3196 30.5789 35.1996 30.5789C36.0796 30.5789 36.7996 29.8589 36.7996 28.9789C36.7996 28.0989 36.0796 27.3789 35.1996 27.3789Z" fill="#181D45"/>
+                                <path d="M43.2002 28.9789C43.2002 29.8589 43.9202 30.5789 44.8002 30.5789C45.6802 30.5789 46.4002 29.8589 46.4002 28.9789C46.4002 28.0989 45.6802 27.3789 44.8002 27.3789C43.9202 27.3789 43.2002 28.0989 43.2002 28.9789Z" fill="#181D45"/>
+                                <path d="M38.4004 12.9789C38.4004 13.8589 39.1204 14.5789 40.0004 14.5789C40.8804 14.5789 41.6004 13.8589 41.6004 12.9789C41.6004 12.0989 40.8804 11.3789 40.0004 11.3789C39.1204 11.3789 38.4004 12.0989 38.4004 12.9789Z" fill="#181D45"/>
+                                <path d="M38.3998 38.5789H41.5998C42.4798 38.5789 43.1998 37.8589 43.1998 36.9789C43.1998 36.0989 42.4798 35.3789 41.5998 35.3789H38.3998C37.5198 35.3789 36.7998 36.0989 36.7998 36.9789C36.7998 37.8589 37.5198 38.5789 38.3998 38.5789Z" fill="#181D45"/>
+                                <path d="M60.7998 52.0189L51.1998 50.0989V46.5789C51.1998 45.6989 50.4798 44.9789 49.5998 44.9789C48.7198 44.9789 47.9998 45.6989 47.9998 46.5789V50.4189L45.6798 51.5389C44.8798 51.9389 44.5598 52.8989 44.9598 53.6989C45.2798 54.2589 45.8398 54.5789 46.3998 54.5789C46.6665 54.5789 46.9065 54.5255 47.1198 54.4189L49.8398 53.0589L60.1598 55.1389C62.3998 55.5389 63.9998 57.5389 63.9998 59.8589V70.5789C63.9998 71.4589 63.2798 72.1789 62.3998 72.1789H17.5998C16.7198 72.1789 15.9998 71.4589 15.9998 70.5789V59.8589C15.9998 57.5389 17.5998 55.5389 19.8398 55.1389L30.1598 53.0589L38.3998 57.1389V65.7789C38.3998 66.6589 39.1198 67.3789 39.9998 67.3789C40.8798 67.3789 41.5998 66.6589 41.5998 65.7789V56.1789C41.5998 55.5389 41.2798 55.0589 40.7198 54.7389L31.9998 50.4189V46.5789C31.9998 45.6989 31.2798 44.9789 30.3998 44.9789C29.5198 44.9789 28.7998 45.6989 28.7998 46.5789V50.0989L19.1998 52.0189C15.5198 52.7389 12.7998 56.0189 12.7998 59.8589V70.5789C12.7998 73.2189 14.9598 75.3789 17.5998 75.3789H62.3998C65.0398 75.3789 67.1998 73.2189 67.1998 70.5789V59.8589C67.1998 56.0189 64.4798 52.7389 60.7998 52.0189Z" fill="#181D45"/>
+                                <path d="M52.8002 64.1789C51.9202 64.1789 51.2002 64.8989 51.2002 65.7789C51.2002 66.6589 51.9202 67.3789 52.8002 67.3789H56.0002C56.8802 67.3789 57.6002 66.6589 57.6002 65.7789C57.6002 64.8989 56.8802 64.1789 56.0002 64.1789H52.8002Z" fill="#181D45"/>
+                                <path d="M28.4801 54.5789L20.4801 56.1789C19.6001 56.4189 19.0401 57.2189 19.2001 58.0989C19.3601 58.8189 20.0801 59.3789 20.8001 59.3789C20.9068 59.3789 21.0134 59.3789 21.1201 59.3789L29.1201 57.7789C30.0001 57.5389 30.5601 56.7389 30.4001 55.8589C30.1601 54.9789 29.3601 54.4189 28.4801 54.5789Z" fill="#181D45"/>
+                                <path d="M59.1995 59.3789C59.9195 59.3789 60.6395 58.8189 60.7995 58.0989C60.9595 57.2189 60.3995 56.4189 59.5195 56.1789L51.5195 54.5789C50.6395 54.4189 49.8395 54.9789 49.5995 55.8589C49.4395 56.7389 49.9995 57.5389 50.8795 57.7789L58.8795 59.3789C58.9862 59.3789 59.0928 59.3789 59.1995 59.3789Z" fill="#181D45"/>
+                                <path d="M23.9998 19.9389V22.5789C23.9998 25.7789 25.1998 33.2989 25.1998 33.5389C25.5198 36.1789 26.6398 38.7389 28.3198 40.8189L28.7198 41.2989C31.4398 44.6589 35.5998 46.5789 39.9998 46.5789C44.3998 46.5789 48.5598 44.6589 51.2798 41.2989L51.6798 40.8189C53.3598 38.7389 54.4798 36.1789 54.7198 33.6189C54.7198 33.6189 55.0398 31.6189 55.3598 29.2189C55.5198 28.3389 54.8798 27.5389 53.9998 27.3789C53.1198 27.2989 52.3198 27.8589 52.2398 28.7389C51.9198 31.1389 51.5998 33.0589 51.5998 33.1389C51.3598 35.2189 50.4798 37.2189 49.1998 38.8189L48.8798 39.2189C46.7198 41.8589 43.4398 43.3789 39.9998 43.3789C36.5598 43.3789 33.2798 41.8589 31.1198 39.2189L30.7998 38.8189C29.5198 37.2189 28.6398 35.2189 28.3998 33.0589C28.3998 33.0589 27.1998 25.5389 27.1998 22.5789V21.0589H49.5998C50.4798 21.0589 51.1998 20.3389 51.1998 19.4589C51.1998 18.5789 50.4798 17.8589 49.5998 17.8589H26.4798L24.2398 14.4989C24.0798 14.2322 23.9998 13.9656 23.9998 13.6989C23.9998 12.9789 24.3998 12.4189 25.0398 12.2589L37.3598 8.5789C39.0398 8.0189 40.9598 8.0189 42.6398 8.5789L54.9598 12.2589C55.5998 12.4189 55.9998 12.9789 55.9998 13.6989C55.9998 13.9656 55.9198 14.2322 55.7598 14.4989L53.0398 18.5789C52.8798 18.8456 52.7998 19.1389 52.7998 19.4589V21.6189C46.7998 24.4989 37.9198 25.0589 30.8798 22.8989C29.9998 22.5789 29.1198 23.0589 28.8798 23.9389C28.6398 24.7389 29.0398 25.6989 29.9198 25.9389C38.2398 28.4189 48.3998 27.6989 55.1998 24.0189C55.6798 23.6989 55.9998 23.1389 55.9998 22.5789V19.9389L58.4798 16.1789C58.9598 15.4589 59.1998 14.5789 59.1998 13.6989C59.1998 11.6189 57.8398 9.7789 55.8398 9.2189L43.5998 5.5389C41.2798 4.8189 38.7198 4.8189 36.3998 5.5389L24.1598 9.2189C22.1598 9.7789 20.7998 11.6189 20.7998 13.6989C20.7998 14.5789 21.0398 15.4589 21.5998 16.1789L23.9998 19.9389Z" fill="#181D45"/>
+                            </svg>                                                                                          
+                            Policia
+                        </h3>
+                        <div class="stack stack:3xs color-blue-100">
+                            <a href="tel:+670 3310148">+670 3310148</a>
+                        </div>
+                    </div>
                     <div class="stack stack:m">
                         <h3 class="text-step-3 text-uppercase color-green-100 ff-salomfu flex gap:s align-items:center">
-                            <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.3991 1.18703C24.2476 1.0554 24.0237 0.922595 23.8869 0.88593C23.75 0.849265 23.5556 0.906378 23.4295 0.981838C23.3167 1.07904 23.0758 1.57894 22.9074 2.07998C22.7218 2.57644 21.5749 7.05738 20.3318 12.0405C19.0887 17.0237 17.9887 21.2987 17.871 21.5767C17.6854 22.0731 17.6683 22.0686 16.8878 21.7502C16.4548 21.5795 13.6931 20.2387 10.7285 18.7525C6.45799 16.6251 5.00747 15.9816 3.71144 15.6161C2.27857 15.2139 1.99318 15.1921 1.61891 15.4013C1.37069 15.5351 1.13325 15.7809 1.11521 15.94C1.07615 16.1116 1.18619 16.5052 1.34996 16.8221C1.50983 17.1563 2.35401 18.311 3.24803 19.4063C4.13814 20.5187 5.74921 22.3704 6.84067 23.555C7.93213 24.7396 9.29632 26.1611 9.87747 26.7173C10.4586 27.2736 10.9411 27.7852 10.9254 27.8538C10.9059 27.9396 9.59344 28.4436 8.01808 28.9865C6.43882 29.5464 4.43007 30.319 3.54468 30.7008C2.65539 31.0998 1.643 31.7206 1.25068 32.0888C0.854454 32.4742 0.514922 32.9294 0.471961 33.1182C0.428998 33.307 0.448124 33.6216 0.528799 33.8253C0.641259 34.1285 0.834796 34.235 1.46227 34.3485C1.9016 34.4116 3.39158 34.4831 4.79064 34.4757C6.18579 34.4854 8.91402 34.3789 10.8296 34.255L14.3333 34.0103C13.9772 34.6978 13.5571 35.5866 13.1659 36.4285C12.7747 37.2704 11.766 39.549 10.9118 41.4685C10.0746 43.3925 9.33713 45.1976 9.27073 45.4893C9.18723 45.7764 9.24205 46.1734 9.37404 46.3909C9.54563 46.6735 9.75236 46.8018 10.1101 46.8248C10.3994 46.8295 10.9261 46.5883 11.4289 46.2132C11.8686 45.8759 12.7784 45.2275 13.4204 44.7987C14.0834 44.3574 16.3427 42.7234 18.4719 41.182C20.588 39.6189 22.3826 38.3519 22.4682 38.3749C22.5366 38.3932 22.8182 39.0695 23.0896 39.8704C23.382 40.6588 24.0015 42.4816 24.4729 43.9187C24.9443 45.3559 25.5702 47.0711 25.8689 47.752C26.1505 48.4283 26.7304 49.5485 27.1395 50.2226C27.6108 51.0225 28.0077 51.5112 28.2642 51.5799C28.4695 51.6349 28.7798 51.627 28.9362 51.5779C29.1517 51.5082 29.3675 51.0381 29.7108 49.9284C29.9613 49.067 30.7952 45.7221 31.5295 42.496C32.2848 39.2574 32.9204 36.624 32.9718 36.6377C33.0231 36.6515 33.8779 37.281 34.8842 38.0422C35.8696 38.816 37.305 39.7651 38.0659 40.1692C38.823 40.5906 39.9338 41.0521 40.5496 41.2171C41.4009 41.4634 41.7454 41.4647 42.0186 41.3012C42.2287 41.1754 42.4436 40.8688 42.5061 40.5943C42.5647 40.3369 42.5147 39.7591 42.4203 39.2969C42.3049 38.8472 41.8706 37.5656 41.4697 36.4569C41.0687 35.3481 40.2332 33.3582 39.624 32.048L38.5166 29.6575C42.2307 28.2495 44.0933 27.4013 45.052 26.8571C46.0277 26.3175 47.1149 25.6074 47.4652 25.2644C47.8287 24.943 48.2273 24.4672 48.3754 24.2156C48.5429 23.8781 48.5595 23.6459 48.4182 23.3896C48.3165 23.1985 48.0095 22.9524 47.7305 22.823C47.4514 22.6936 45.9903 22.5751 44.2545 22.547C42.6082 22.5246 40.7146 22.4724 40.0163 22.4309C39.335 22.394 38.2526 22.2861 37.6554 22.1989L36.5334 22.0257C36.992 20.7285 37.7601 17.912 38.5501 14.9194C39.3572 11.9314 40.0241 9.16064 40.0587 8.76938C40.0933 8.37812 40.0331 7.92503 39.9065 7.76366C39.7931 7.62404 39.5009 7.47293 39.2497 7.46024C38.9091 7.4418 38.3853 7.82943 37.0798 9.09999C36.1418 10.0321 33.9916 12.2233 32.3218 13.9788C30.6348 15.7297 29.0396 17.396 28.7695 17.7059L28.2696 18.2275C27.3258 12.5673 26.7363 9.49632 26.3562 7.73771C25.9761 5.97909 25.4308 3.83027 25.154 2.97324C24.8772 2.11621 24.5374 1.29692 24.3991 1.18703Z" fill="#00A44F"/>
-                                </svg>
-                                
-                            Como chegar
+                            <svg width="80" height="81" viewBox="0 0 80 81" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M78.4006 40.179C78.4006 61.379 61.2006 78.579 40.0006 78.579C18.8006 78.579 1.60059 61.379 1.60059 40.179C1.60059 18.979 18.8006 1.77899 40.0006 1.77899C61.2006 1.77899 78.4006 18.979 78.4006 40.179ZM75.2006 40.179C75.2006 20.739 59.4406 4.97899 40.0006 4.97899C20.5606 4.97899 4.80059 20.739 4.80059 40.179C4.80059 59.619 20.5606 75.379 40.0006 75.379C59.4406 75.379 75.2006 59.619 75.2006 40.179Z" fill="#00A44F"/>
+                                <path d="M53.5206 13.139L52.0806 16.019C61.4406 20.659 67.2006 29.939 67.2006 40.179C67.2006 55.139 54.9606 67.379 40.0006 67.379C25.0406 67.379 12.8006 55.139 12.8006 40.179C12.8006 25.219 25.0406 12.979 40.0006 12.979V9.77899C23.2006 9.77899 9.60059 23.379 9.60059 40.179C9.60059 56.979 23.2006 70.579 40.0006 70.579C56.8006 70.579 70.4006 56.979 70.4006 40.179C70.4006 28.659 63.9206 18.339 53.5206 13.139Z" fill="#00A44F"/>
+                                <path fill-rule="evenodd" clip-rule="evenodd" d="M32.0006 17.779H48.0006V32.179H62.4006V48.179H48.0006V62.579H32.0006V48.179H17.6006V32.179H32.0006V17.779ZM35.2006 35.379H20.8006V44.979H35.2006V59.379H44.8006V44.979H59.2006V35.379H44.8006V20.979H35.2006V35.379Z" fill="#00A44F"/>
+                                <path d="M48.0008 9.77899H44.8008V12.979H48.0008V9.77899Z" fill="#00A44F"/>
+                            </svg>                                                                                         
+                            Clinica DMC
                         </h3>
+                        <div class="stack stack:3xs color-blue-100">
+                            <a href="tel:+67077428888">+67077428888</a>
+                        </div>
                     </div>
-                    <div class="stack stack:m">
-                        <h3 class="text-step-3 text-uppercase color-blue-50 ff-salomfu flex gap:s justify-content:center align-items:center">
-                            <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.3991 1.18703C24.2476 1.0554 24.0237 0.922595 23.8869 0.88593C23.75 0.849265 23.5556 0.906378 23.4295 0.981838C23.3167 1.07904 23.0758 1.57894 22.9074 2.07998C22.7218 2.57644 21.5749 7.05738 20.3318 12.0405C19.0887 17.0237 17.9887 21.2987 17.871 21.5767C17.6854 22.0731 17.6683 22.0686 16.8878 21.7502C16.4548 21.5795 13.6931 20.2387 10.7285 18.7525C6.45799 16.6251 5.00747 15.9816 3.71144 15.6161C2.27857 15.2139 1.99318 15.1921 1.61891 15.4013C1.37069 15.5351 1.13325 15.7809 1.11521 15.94C1.07615 16.1116 1.18619 16.5052 1.34996 16.8221C1.50983 17.1563 2.35401 18.311 3.24803 19.4063C4.13814 20.5187 5.74921 22.3704 6.84067 23.555C7.93213 24.7396 9.29632 26.1611 9.87747 26.7173C10.4586 27.2736 10.9411 27.7852 10.9254 27.8538C10.9059 27.9396 9.59344 28.4436 8.01808 28.9865C6.43882 29.5464 4.43007 30.319 3.54468 30.7008C2.65539 31.0998 1.643 31.7206 1.25068 32.0888C0.854454 32.4742 0.514922 32.9294 0.471961 33.1182C0.428998 33.307 0.448124 33.6216 0.528799 33.8253C0.641259 34.1285 0.834796 34.235 1.46227 34.3485C1.9016 34.4116 3.39158 34.4831 4.79064 34.4757C6.18579 34.4854 8.91402 34.3789 10.8296 34.255L14.3333 34.0103C13.9772 34.6978 13.5571 35.5866 13.1659 36.4285C12.7747 37.2704 11.766 39.549 10.9118 41.4685C10.0746 43.3925 9.33713 45.1976 9.27073 45.4893C9.18723 45.7764 9.24205 46.1734 9.37404 46.3909C9.54563 46.6735 9.75236 46.8018 10.1101 46.8248C10.3994 46.8295 10.9261 46.5883 11.4289 46.2132C11.8686 45.8759 12.7784 45.2275 13.4204 44.7987C14.0834 44.3574 16.3427 42.7234 18.4719 41.182C20.588 39.6189 22.3826 38.3519 22.4682 38.3749C22.5366 38.3932 22.8182 39.0695 23.0896 39.8704C23.382 40.6588 24.0015 42.4816 24.4729 43.9187C24.9443 45.3559 25.5702 47.0711 25.8689 47.752C26.1505 48.4283 26.7304 49.5485 27.1395 50.2226C27.6108 51.0225 28.0077 51.5112 28.2642 51.5799C28.4695 51.6349 28.7798 51.627 28.9362 51.5779C29.1517 51.5082 29.3675 51.0381 29.7108 49.9284C29.9613 49.067 30.7952 45.7221 31.5295 42.496C32.2848 39.2574 32.9204 36.624 32.9718 36.6377C33.0231 36.6515 33.8779 37.281 34.8842 38.0422C35.8696 38.816 37.305 39.7651 38.0659 40.1692C38.823 40.5906 39.9338 41.0521 40.5496 41.2171C41.4009 41.4634 41.7454 41.4647 42.0186 41.3012C42.2287 41.1754 42.4436 40.8688 42.5061 40.5943C42.5647 40.3369 42.5147 39.7591 42.4203 39.2969C42.3049 38.8472 41.8706 37.5656 41.4697 36.4569C41.0687 35.3481 40.2332 33.3582 39.624 32.048L38.5166 29.6575C42.2307 28.2495 44.0933 27.4013 45.052 26.8571C46.0277 26.3175 47.1149 25.6074 47.4652 25.2644C47.8287 24.943 48.2273 24.4672 48.3754 24.2156C48.5429 23.8781 48.5595 23.6459 48.4182 23.3896C48.3165 23.1985 48.0095 22.9524 47.7305 22.823C47.4514 22.6936 45.9903 22.5751 44.2545 22.547C42.6082 22.5246 40.7146 22.4724 40.0163 22.4309C39.335 22.394 38.2526 22.2861 37.6554 22.1989L36.5334 22.0257C36.992 20.7285 37.7601 17.912 38.5501 14.9194C39.3572 11.9314 40.0241 9.16064 40.0587 8.76938C40.0933 8.37812 40.0331 7.92503 39.9065 7.76366C39.7931 7.62404 39.5009 7.47293 39.2497 7.46024C38.9091 7.4418 38.3853 7.82943 37.0798 9.09999C36.1418 10.0321 33.9916 12.2233 32.3218 13.9788C30.6348 15.7297 29.0396 17.396 28.7695 17.7059L28.2696 18.2275C27.3258 12.5673 26.7363 9.49632 26.3562 7.73771C25.9761 5.97909 25.4308 3.83027 25.154 2.97324C24.8772 2.11621 24.5374 1.29692 24.3991 1.18703Z" fill="#2111DD"/>
-                                </svg>
-                                
-                            Transporte
-                        </h3>
+                </div>
+            </div>
+        </section> <!-- Como Transporte-->
+        <section class="bg-off-white pb-l">
+            <div class="wrapper">
+                <div class="stack stack:m">
+                    <h3 class="text-step-3 text-uppercase color-orange-100 ff-salomfu flex gap:s align-items:center">
+                        <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.3991 1.18703C24.2476 1.0554 24.0237 0.922595 23.8869 0.88593C23.75 0.849265 23.5556 0.906378 23.4295 0.981838C23.3167 1.07904 23.0758 1.57894 22.9074 2.07998C22.7218 2.57644 21.5749 7.05738 20.3318 12.0405C19.0887 17.0237 17.9887 21.2987 17.871 21.5767C17.6854 22.0731 17.6683 22.0686 16.8878 21.7502C16.4548 21.5795 13.6931 20.2387 10.7285 18.7525C6.45799 16.6251 5.00747 15.9816 3.71144 15.6161C2.27857 15.2139 1.99318 15.1921 1.61891 15.4013C1.37069 15.5351 1.13325 15.7809 1.11521 15.94C1.07615 16.1116 1.18619 16.5052 1.34996 16.8221C1.50983 17.1563 2.35401 18.311 3.24803 19.4063C4.13814 20.5187 5.74921 22.3704 6.84067 23.555C7.93213 24.7396 9.29632 26.1611 9.87747 26.7173C10.4586 27.2736 10.9411 27.7852 10.9254 27.8538C10.9059 27.9396 9.59344 28.4436 8.01808 28.9865C6.43882 29.5464 4.43007 30.319 3.54468 30.7008C2.65539 31.0998 1.643 31.7206 1.25068 32.0888C0.854454 32.4742 0.514922 32.9294 0.471961 33.1182C0.428998 33.307 0.448124 33.6216 0.528799 33.8253C0.641259 34.1285 0.834796 34.235 1.46227 34.3485C1.9016 34.4116 3.39158 34.4831 4.79064 34.4757C6.18579 34.4854 8.91402 34.3789 10.8296 34.255L14.3333 34.0103C13.9772 34.6978 13.5571 35.5866 13.1659 36.4285C12.7747 37.2704 11.766 39.549 10.9118 41.4685C10.0746 43.3925 9.33713 45.1976 9.27073 45.4893C9.18723 45.7764 9.24205 46.1734 9.37404 46.3909C9.54563 46.6735 9.75236 46.8018 10.1101 46.8248C10.3994 46.8295 10.9261 46.5883 11.4289 46.2132C11.8686 45.8759 12.7784 45.2275 13.4204 44.7987C14.0834 44.3574 16.3427 42.7234 18.4719 41.182C20.588 39.6189 22.3826 38.3519 22.4682 38.3749C22.5366 38.3932 22.8182 39.0695 23.0896 39.8704C23.382 40.6588 24.0015 42.4816 24.4729 43.9187C24.9443 45.3559 25.5702 47.0711 25.8689 47.752C26.1505 48.4283 26.7304 49.5485 27.1395 50.2226C27.6108 51.0225 28.0077 51.5112 28.2642 51.5799C28.4695 51.6349 28.7798 51.627 28.9362 51.5779C29.1517 51.5082 29.3675 51.0381 29.7108 49.9284C29.9613 49.067 30.7952 45.7221 31.5295 42.496C32.2848 39.2574 32.9204 36.624 32.9718 36.6377C33.0231 36.6515 33.8779 37.281 34.8842 38.0422C35.8696 38.816 37.305 39.7651 38.0659 40.1692C38.823 40.5906 39.9338 41.0521 40.5496 41.2171C41.4009 41.4634 41.7454 41.4647 42.0186 41.3012C42.2287 41.1754 42.4436 40.8688 42.5061 40.5943C42.5647 40.3369 42.5147 39.7591 42.4203 39.2969C42.3049 38.8472 41.8706 37.5656 41.4697 36.4569C41.0687 35.3481 40.2332 33.3582 39.624 32.048L38.5166 29.6575C42.2307 28.2495 44.0933 27.4013 45.052 26.8571C46.0277 26.3175 47.1149 25.6074 47.4652 25.2644C47.8287 24.943 48.2273 24.4672 48.3754 24.2156C48.5429 23.8781 48.5595 23.6459 48.4182 23.3896C48.3165 23.1985 48.0095 22.9524 47.7305 22.823C47.4514 22.6936 45.9903 22.5751 44.2545 22.547C42.6082 22.5246 40.7146 22.4724 40.0163 22.4309C39.335 22.394 38.2526 22.2861 37.6554 22.1989L36.5334 22.0257C36.992 20.7285 37.7601 17.912 38.5501 14.9194C39.3572 11.9314 40.0241 9.16064 40.0587 8.76938C40.0933 8.37812 40.0331 7.92503 39.9065 7.76366C39.7931 7.62404 39.5009 7.47293 39.2497 7.46024C38.9091 7.4418 38.3853 7.82943 37.0798 9.09999C36.1418 10.0321 33.9916 12.2233 32.3218 13.9788C30.6348 15.7297 29.0396 17.396 28.7695 17.7059L28.2696 18.2275C27.3258 12.5673 26.7363 9.49632 26.3562 7.73771C25.9761 5.97909 25.4308 3.83027 25.154 2.97324C24.8772 2.11621 24.5374 1.29692 24.3991 1.18703Z" fill="#FF3400"/>
+                        </svg>                                                   
+                        FAQ
+                    </h3>
+                    <div class="faqs stack stack:m">
+                        <div class="faq stack stack:s">
+                            <div class="question flex justify-content:space-between">
+                                <h3>Crianças podem entrar no festival?</h3>
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2.80527L17.5 0.405273L10 7.60527L2.5 0.405273L0 2.80527L10 12.4053L20 2.80527Z" fill="#181D45"/>
+                                </svg>                            
+                            </div>
+                            <div class="answer">
+                                <p>Apesar de não recomendado, é permitida a entrada de crianças. Crianças até aos 9 anos não pagam bilhete, quando acompanhadas por adultor adulto portador de bilhete.</p>
+                            </div>
+                        </div>
+                        <div class="faq stack stack:xs">
+                            <div class="question flex justify-content:space-between">
+                                <h3>Posso comprar bilhete só para um dia?</h3>
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2.80527L17.5 0.405273L10 7.60527L2.5 0.405273L0 2.80527L10 12.4053L20 2.80527Z" fill="#181D45"/>
+                                </svg>                            
+                            </div>
+                            <div class="answer">
+                                <p>Não existem bilhetes diarios, todos os bilhetes dão acesso aos 3 dias de festival.</p>
+                            </div>
+                        </div>
+                        <div class="faq stack stack:xs">
+                            <div class="question flex justify-content:space-between">
+                                <h3>Posso entrar com capacete?</h3>
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2.80527L17.5 0.405273L10 7.60527L2.5 0.405273L0 2.80527L10 12.4053L20 2.80527Z" fill="#181D45"/>
+                                </svg>                            
+                            </div>
+                            <div class="answer">
+                                <p>Não é permitida a entrada com capacete.</p>
+                            </div>
+                        </div>
+                        <div class="faq stack stack:xs">
+                            <div class="question flex justify-content:space-between">
+                                <h3>Que objetos não são permitidos ao entrar no recinto?</h3>
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2.80527L17.5 0.405273L10 7.60527L2.5 0.405273L0 2.80527L10 12.4053L20 2.80527Z" fill="#181D45"/>
+                                </svg>                            
+                            </div>
+                            <div class="answer">
+                                <p>Armas de fogo/brancas; <br />
+                                Objetos considerados perigosos; <br />
+                                Material explosivo e material pirotécnico; <br />
+                                Comidas e bebidas do exterior; <br />
+                                Cadeiras; <br />
+                                Capacetes; <br />
+                                Altifalantes, <br />
+                                Instrumentos Musicais; <br />
+                                Objetos de vidro (garrafas/perfumes, etc.); <br />
+                                Malas de viagem e mochilas de grandes dimensões, <br />
+                                Qualquer objecto que possa ser arremessado e que não conste nas categorias anteriore.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="faq stack stack:xs">
+                            <div class="question flex justify-content:space-between">
+                                <h3>Qual é o horário do festival?</h3>
+                                <svg width="20" height="13" viewBox="0 0 20 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M20 2.80527L17.5 0.405273L10 7.60527L2.5 0.405273L0 2.80527L10 12.4053L20 2.80527Z" fill="#181D45"/>
+                                </svg>                            
+                            </div>
+                            <div class="answer">
+                                <p>Seminários serão realizados durante o periodo da manhã.</p>
+                                <p>Workshops serão realizados durante o periodo da tarde.</p>
+                                <p>Para os concertos de musica, as portas do recinto abrirão às 4 da tarde e encerrarão à 1 da manhã.</p>
+                            </div>
+                        </div>
+                        
                     </div>
-                    <div class="stack stack:m">
-                        <h3 class="text-step-3 text-uppercase color-orange-100 ff-salomfu flex gap:s justify-content:flex-end align-items:center">
-                            <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M24.3991 1.18703C24.2476 1.0554 24.0237 0.922595 23.8869 0.88593C23.75 0.849265 23.5556 0.906378 23.4295 0.981838C23.3167 1.07904 23.0758 1.57894 22.9074 2.07998C22.7218 2.57644 21.5749 7.05738 20.3318 12.0405C19.0887 17.0237 17.9887 21.2987 17.871 21.5767C17.6854 22.0731 17.6683 22.0686 16.8878 21.7502C16.4548 21.5795 13.6931 20.2387 10.7285 18.7525C6.45799 16.6251 5.00747 15.9816 3.71144 15.6161C2.27857 15.2139 1.99318 15.1921 1.61891 15.4013C1.37069 15.5351 1.13325 15.7809 1.11521 15.94C1.07615 16.1116 1.18619 16.5052 1.34996 16.8221C1.50983 17.1563 2.35401 18.311 3.24803 19.4063C4.13814 20.5187 5.74921 22.3704 6.84067 23.555C7.93213 24.7396 9.29632 26.1611 9.87747 26.7173C10.4586 27.2736 10.9411 27.7852 10.9254 27.8538C10.9059 27.9396 9.59344 28.4436 8.01808 28.9865C6.43882 29.5464 4.43007 30.319 3.54468 30.7008C2.65539 31.0998 1.643 31.7206 1.25068 32.0888C0.854454 32.4742 0.514922 32.9294 0.471961 33.1182C0.428998 33.307 0.448124 33.6216 0.528799 33.8253C0.641259 34.1285 0.834796 34.235 1.46227 34.3485C1.9016 34.4116 3.39158 34.4831 4.79064 34.4757C6.18579 34.4854 8.91402 34.3789 10.8296 34.255L14.3333 34.0103C13.9772 34.6978 13.5571 35.5866 13.1659 36.4285C12.7747 37.2704 11.766 39.549 10.9118 41.4685C10.0746 43.3925 9.33713 45.1976 9.27073 45.4893C9.18723 45.7764 9.24205 46.1734 9.37404 46.3909C9.54563 46.6735 9.75236 46.8018 10.1101 46.8248C10.3994 46.8295 10.9261 46.5883 11.4289 46.2132C11.8686 45.8759 12.7784 45.2275 13.4204 44.7987C14.0834 44.3574 16.3427 42.7234 18.4719 41.182C20.588 39.6189 22.3826 38.3519 22.4682 38.3749C22.5366 38.3932 22.8182 39.0695 23.0896 39.8704C23.382 40.6588 24.0015 42.4816 24.4729 43.9187C24.9443 45.3559 25.5702 47.0711 25.8689 47.752C26.1505 48.4283 26.7304 49.5485 27.1395 50.2226C27.6108 51.0225 28.0077 51.5112 28.2642 51.5799C28.4695 51.6349 28.7798 51.627 28.9362 51.5779C29.1517 51.5082 29.3675 51.0381 29.7108 49.9284C29.9613 49.067 30.7952 45.7221 31.5295 42.496C32.2848 39.2574 32.9204 36.624 32.9718 36.6377C33.0231 36.6515 33.8779 37.281 34.8842 38.0422C35.8696 38.816 37.305 39.7651 38.0659 40.1692C38.823 40.5906 39.9338 41.0521 40.5496 41.2171C41.4009 41.4634 41.7454 41.4647 42.0186 41.3012C42.2287 41.1754 42.4436 40.8688 42.5061 40.5943C42.5647 40.3369 42.5147 39.7591 42.4203 39.2969C42.3049 38.8472 41.8706 37.5656 41.4697 36.4569C41.0687 35.3481 40.2332 33.3582 39.624 32.048L38.5166 29.6575C42.2307 28.2495 44.0933 27.4013 45.052 26.8571C46.0277 26.3175 47.1149 25.6074 47.4652 25.2644C47.8287 24.943 48.2273 24.4672 48.3754 24.2156C48.5429 23.8781 48.5595 23.6459 48.4182 23.3896C48.3165 23.1985 48.0095 22.9524 47.7305 22.823C47.4514 22.6936 45.9903 22.5751 44.2545 22.547C42.6082 22.5246 40.7146 22.4724 40.0163 22.4309C39.335 22.394 38.2526 22.2861 37.6554 22.1989L36.5334 22.0257C36.992 20.7285 37.7601 17.912 38.5501 14.9194C39.3572 11.9314 40.0241 9.16064 40.0587 8.76938C40.0933 8.37812 40.0331 7.92503 39.9065 7.76366C39.7931 7.62404 39.5009 7.47293 39.2497 7.46024C38.9091 7.4418 38.3853 7.82943 37.0798 9.09999C36.1418 10.0321 33.9916 12.2233 32.3218 13.9788C30.6348 15.7297 29.0396 17.396 28.7695 17.7059L28.2696 18.2275C27.3258 12.5673 26.7363 9.49632 26.3562 7.73771C25.9761 5.97909 25.4308 3.83027 25.154 2.97324C24.8772 2.11621 24.5374 1.29692 24.3991 1.18703Z" fill="#FF3400"/>
-                                </svg>
-                                
-                            Recinto
-                        </h3>
+                </div>                
+            </div>
+        </section>
+        <section class="bg-yellow pb-l">
+            <div class="wrapper">
+                <div class="stack stack:m">
+                    <h3 class="text-step-3 text-uppercase color-blue-50 ff-salomfu flex gap:s align-items:center">
+                        <svg width="49" height="52" viewBox="0 0 49 52" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M24.3991 1.18703C24.2476 1.0554 24.0237 0.922595 23.8869 0.88593C23.75 0.849265 23.5556 0.906378 23.4295 0.981838C23.3167 1.07904 23.0758 1.57894 22.9074 2.07998C22.7218 2.57644 21.5749 7.05738 20.3318 12.0405C19.0887 17.0237 17.9887 21.2987 17.871 21.5767C17.6854 22.0731 17.6683 22.0686 16.8878 21.7502C16.4548 21.5795 13.6931 20.2387 10.7285 18.7525C6.45799 16.6251 5.00747 15.9816 3.71144 15.6161C2.27857 15.2139 1.99318 15.1921 1.61891 15.4013C1.37069 15.5351 1.13325 15.7809 1.11521 15.94C1.07615 16.1116 1.18619 16.5052 1.34996 16.8221C1.50983 17.1563 2.35401 18.311 3.24803 19.4063C4.13814 20.5187 5.74921 22.3704 6.84067 23.555C7.93213 24.7396 9.29632 26.1611 9.87747 26.7173C10.4586 27.2736 10.9411 27.7852 10.9254 27.8538C10.9059 27.9396 9.59344 28.4436 8.01808 28.9865C6.43882 29.5464 4.43007 30.319 3.54468 30.7008C2.65539 31.0998 1.643 31.7206 1.25068 32.0888C0.854454 32.4742 0.514922 32.9294 0.471961 33.1182C0.428998 33.307 0.448124 33.6216 0.528799 33.8253C0.641259 34.1285 0.834796 34.235 1.46227 34.3485C1.9016 34.4116 3.39158 34.4831 4.79064 34.4757C6.18579 34.4854 8.91402 34.3789 10.8296 34.255L14.3333 34.0103C13.9772 34.6978 13.5571 35.5866 13.1659 36.4285C12.7747 37.2704 11.766 39.549 10.9118 41.4685C10.0746 43.3925 9.33713 45.1976 9.27073 45.4893C9.18723 45.7764 9.24205 46.1734 9.37404 46.3909C9.54563 46.6735 9.75236 46.8018 10.1101 46.8248C10.3994 46.8295 10.9261 46.5883 11.4289 46.2132C11.8686 45.8759 12.7784 45.2275 13.4204 44.7987C14.0834 44.3574 16.3427 42.7234 18.4719 41.182C20.588 39.6189 22.3826 38.3519 22.4682 38.3749C22.5366 38.3932 22.8182 39.0695 23.0896 39.8704C23.382 40.6588 24.0015 42.4816 24.4729 43.9187C24.9443 45.3559 25.5702 47.0711 25.8689 47.752C26.1505 48.4283 26.7304 49.5485 27.1395 50.2226C27.6108 51.0225 28.0077 51.5112 28.2642 51.5799C28.4695 51.6349 28.7798 51.627 28.9362 51.5779C29.1517 51.5082 29.3675 51.0381 29.7108 49.9284C29.9613 49.067 30.7952 45.7221 31.5295 42.496C32.2848 39.2574 32.9204 36.624 32.9718 36.6377C33.0231 36.6515 33.8779 37.281 34.8842 38.0422C35.8696 38.816 37.305 39.7651 38.0659 40.1692C38.823 40.5906 39.9338 41.0521 40.5496 41.2171C41.4009 41.4634 41.7454 41.4647 42.0186 41.3012C42.2287 41.1754 42.4436 40.8688 42.5061 40.5943C42.5647 40.3369 42.5147 39.7591 42.4203 39.2969C42.3049 38.8472 41.8706 37.5656 41.4697 36.4569C41.0687 35.3481 40.2332 33.3582 39.624 32.048L38.5166 29.6575C42.2307 28.2495 44.0933 27.4013 45.052 26.8571C46.0277 26.3175 47.1149 25.6074 47.4652 25.2644C47.8287 24.943 48.2273 24.4672 48.3754 24.2156C48.5429 23.8781 48.5595 23.6459 48.4182 23.3896C48.3165 23.1985 48.0095 22.9524 47.7305 22.823C47.4514 22.6936 45.9903 22.5751 44.2545 22.547C42.6082 22.5246 40.7146 22.4724 40.0163 22.4309C39.335 22.394 38.2526 22.2861 37.6554 22.1989L36.5334 22.0257C36.992 20.7285 37.7601 17.912 38.5501 14.9194C39.3572 11.9314 40.0241 9.16064 40.0587 8.76938C40.0933 8.37812 40.0331 7.92503 39.9065 7.76366C39.7931 7.62404 39.5009 7.47293 39.2497 7.46024C38.9091 7.4418 38.3853 7.82943 37.0798 9.09999C36.1418 10.0321 33.9916 12.2233 32.3218 13.9788C30.6348 15.7297 29.0396 17.396 28.7695 17.7059L28.2696 18.2275C27.3258 12.5673 26.7363 9.49632 26.3562 7.73771C25.9761 5.97909 25.4308 3.83027 25.154 2.97324C24.8772 2.11621 24.5374 1.29692 24.3991 1.18703Z" fill="#2111DD"/>
+                        </svg>                                                  
+                        Contactos
+                    </h3>
+                    <div class="stack stack:3xs color-blue-100">
+                        <a href="tel:+67078102853">+67078102853</a>
+                        <a href="mailto:info@tasifest.com">info@tasifest.com</a>                        
                     </div>
                 </div>
             </div>
@@ -221,45 +417,36 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script>
-        const swiper = new Swiper(".swiper-where", {
-        observer: true,
-        resizeObserver: true,
-        spaceBetween: 20,
-        pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-        },
-        breakpoints: {
-            320: {
-                spaceBetween: 20,
-                slidesPerView: 1,
-                rewind: true,
-                grid: {
-                    fill: 'row',
-                    rows: 1,
-                },
-            },
-            768: {
-                spaceBetween: 20,
-                slidesPerView: 2,
-                rewind: true,
-                grid: {
-                    fill: 'row',
-                    rows: 1,
-                },
-            },
-            1280: {
-                spaceBetween: 20,
-                slidesPerView: 1,
-                rewind: true,
-                grid: {
-                    fill: "row",
-                    rows: 5,
-                },
-            },
-        },
-        grabCursor: true,
-        });        
+        const faqs = document.querySelectorAll(".faq");
+        
+        faqs.forEach(faq => {
+            const question = faq.querySelector(".question");
+            const answer = faq.querySelector(".answer");
+            
+            question.addEventListener("click", () => {
+                if (faq.classList.contains("active")) {
+                    faq.classList.remove("active");
+                    answer.style.maxHeight = null;
+                } else {
+                    faqs.forEach(otherFaq => {
+                        if (otherFaq.classList.contains("active")) {
+                        otherFaq.classList.remove("active");
+                        otherFaq.querySelector(".answer").style.maxHeight = null;
+                        }
+                    });
+                    faq.classList.add("active");
+                    answer.style.maxHeight = answer.scrollHeight + "px";
+                }
+            });
+        });
     </script>
+    <script>
+        const btnMobile = document.getElementById("btn-mobile");
+        const menu = document.getElementById("menu");
+
+        btnMobile.addEventListener("click", function() {
+            menu.classList.toggle("active");
+        });
+   </script>
 </body>
 </html>

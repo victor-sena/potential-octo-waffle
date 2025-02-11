@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1492.299"
+   height="84.188332"
+   viewBox="0 0 1492.2989 84.188337"
+   fill="none"
+   version="1.1"
+   id="svg1"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1">
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath10">
+      <rect
+         style="fill:#800000;stroke-width:1.77779"
+         id="rect11"
+         width="1492.299"
+         height="84.33419"
+         x="40.879448"
+         y="-0.14585952" />
+    </clipPath>
+  </defs>
+  <path
+     d="m 0,711.635 7,-474.5 C 13.75,178.59 -13.05,37.5 65.75,37.5 c 136.5,0 124.5,47.5 253.5,24.0001 93.52,-17.0366 220.5,-68.00006 449.5,-35.5 82.984,11.7771 114,35.4999 240,16.4999 34.623,-5.2209 91.5,-42.5 165.5,-42.5 104,0 160.13,91.1995 275,61.5001 C 1551.75,35 1568,64.0002 1584.5,95.5002 c 16.63,31.7438 -1.58,132.1668 5.75,197.9998 l -18.75,390.635 z"
+     fill="#00e4b2"
+     id="path1"
+     clip-path="url(#clipPath10)"
+     transform="translate(-40.879448)" />
+</svg>

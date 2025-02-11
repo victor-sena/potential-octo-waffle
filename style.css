@@ -412,6 +412,9 @@ main {
 .img-border\:yellow {
   border:8px solid var(--clr-yellow);
 }
+.img-border\:orange-100 {
+  border:8px solid var(--clr-orange-100);
+}
 .z-index\:1 {
   z-index: 1;
 }
@@ -1693,5 +1696,103 @@ svg {
   }
   .timor-poster-mobile {
     display: none;
+  }
+}
+/* Quem Somos */
+.quem-sidebar > :first-child {
+  flex-basis: 456px; 
+}
+.quem-img {
+  max-width: 456px;
+}
+.quem-img::after,
+.quem-img::before {
+  position: absolute;
+}
+.quem-img::before {
+  content: url(assets/icon/icon-faz-ondas-orage-green.svg);
+  width: 128px;
+  height: 145px;
+  top: 35px;
+  left: -80px;
+  z-index: 3;
+}
+.quem-img::after {
+  content: url(assets/icon/icon-v-green-100.svg);
+  width: 66px;
+  height: 83px;
+  bottom: -45px;
+  right: -20px;
+  z-index: 3;
+}
+.icon-splash-float {
+  display: block;
+  width: 32px;
+  height: 32px;
+  background: url(assets/icon/icon-splash-yellow.svg) no-repeat;
+  background-size: contain;
+  top: 55px;
+  left: 35px;
+}
+.icon-turtle-float {
+  display: block;
+  width: 52px;
+  height: 56px;
+  background: url(assets/icon/icon-turtle.svg) no-repeat;
+  background-size: contain;
+  top: -5px;
+  left: 75px;
+}
+.bg-wave-top-green-50 {
+  height: 112px;
+  background: var(--clr-off-white) url(assets/img/bg-wave-top-green-50.svg) center top no-repeat;
+  background-size: cover;
+}
+.form-center {
+  max-width: 60ch;
+  margin: 0 auto;
+}
+.grid-label {
+  grid-template-columns: repeat(auto-fit, minmax(min(120px, 100%), 1fr));
+}
+.form label {
+  font-family: var(--font-october);
+  color: var(--clr-blue-100);
+  text-transform: uppercase;
+  font-size: var(--step--1);
+}
+.form input,
+.form textarea {
+  padding-inline: var(--space-xs);
+  padding-block: var(--space-xs);
+  border-radius: 8px;
+  border: 0;
+  background-color: var(--clr-off-white);
+  color: var(--clr-blue-100);
+  font-family: var(--font-october);
+  max-width: 100%;
+}
+.form textarea {
+  resize: none;
+}
+.form button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0;
+  color: var(--clr-yellow);
+  padding-inline: var(--space-2xl);
+  padding-block: var(--space-3xs);
+  font-family: var(--font-salomfu);
+  letter-spacing: 1px;
+  font-size: var(--step-1);
+  font-weight: 100;
+  margin-inline:auto;
+  
+}
+@media(max-width:440px) {
+  .form button {
+    width: 100%;
+    padding-inline: 0;
   }
 }
